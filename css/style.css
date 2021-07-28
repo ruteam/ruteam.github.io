@@ -670,8 +670,8 @@ form {
 	background-image: url(../images/katalog/mainimg/covers/covers.jpg);
 }
 
-.item__bgimgfishrod,
 .item__bgimgspin,
+.item__bgimgfishrod,
 .item__bgimgcoils,
 .item__bgimgbombards,
 .item__bgimgcarbines,
@@ -727,9 +727,46 @@ form {
 	top: 1700px;
 }
 
+.item__bgimgspin,
+.item__bgimgcarbines,
+.item__bgimghooks,
+.item__bgimgfloats,
+.item__bgimgchairs {
+	left: 535px;
+}
+
+.item__bgimgfishrod,
+.item__bgimgscales,
+.item__bgimgclothes,
+.item__bgimgbait,
+.item__bgimgcovers {
+	left: 810px;
+}
+
+.item__bgimgcoils,
+.item__bgimgtools,
+.item__bgimgleashes,
+.item__bgimgbaits {
+	left: 1085px;
+}
+
+.item__bgimgbombards,
+.item__bgimgfeeders,
+.item__bgimgsubchecks,
+.item__bgimgcages {
+	left: 1365px;
+}
+
+.item__bgimgspin {
+	background-image: url(../images/katalog/mainimg/spin/spin-1.png);
+}
+
+.item__bgimgspin:hover {
+	background-image: url(../images/katalog/mainimg/spin/spin-2.png);
+}
+
 .item__bgimgfishrod{
 	background-image: url(../images/katalog/mainimg/fishrod/fishrod-1.png);
-	left: 810px;
 	background-size: 40px;
 }
 
@@ -737,17 +774,8 @@ form {
 	background-image: url(../images/katalog/mainimg/fishrod/fishrod-2.png);
 }
 
-.item__bgimgspin {
-	background-image: url(../images/katalog/mainimg/spin/spin-1.png);
-	left: 535px;
-}
-.item__bgimgspin:hover {
-	background-image: url(../images/katalog/mainimg/spin/spin-2.png);
-}
-
 .item__bgimgcoils {
 	background-image: url(../images/katalog/mainimg/coils/coils-1.png);
-	left: 1085px;
 }
 
 .item__bgimgcoils:hover {
@@ -756,7 +784,6 @@ form {
 
 .item__bgimgbombards {
 	background-image: url(../images/katalog/mainimg/bombards/bombards-1.png);
-	left: 1365px;
 	background-size: 40px;
 }
 
@@ -764,9 +791,8 @@ form {
 	background-image: url(../images/katalog/mainimg/bombards/bombards-2.png);
 }
 
-.item__bgimgcarbines{
+.item__bgimgcarbines {
 	background-image: url(../images/katalog/mainimg/carbines/carbines-1.png);
-	left: 535px;
 	background-size: 42px;
 }
 
@@ -776,7 +802,6 @@ form {
 
 .item__bgimgscales {
 	background-image: url(../images/katalog/mainimg/scales/scales-1.png);
-	left: 810px;
 	background-size: 45px;
 }
 
@@ -786,7 +811,6 @@ form {
 
 .item__bgimgtools {
 	background-image: url(../images/katalog/mainimg/tools/tools-1.png);
-	left: 1085px;
 	background-size: 42px;
 }
 
@@ -796,7 +820,6 @@ form {
 
 .item__bgimgfeeders {
 	background-image: url(../images/katalog/mainimg/feeders/feeders-1.png);
-	left: 1365px;
 	background-size: 42px;
 }
 
@@ -806,7 +829,6 @@ form {
 
 .item__bgimghooks {
 	background-image: url(../images/katalog/mainimg/hooks/hooks-1.png);
-	left: 535px;
 	background-size: 40px;
 }
 
@@ -816,7 +838,6 @@ form {
 
 .item__bgimgclothes{
 	background-image: url(../images/katalog/mainimg/clothes/clothes-1.png);
-	left: 810px;
 }
 
 .item__bgimgclothes:hover {
@@ -825,7 +846,6 @@ form {
 
 .item__bgimgleashes {
 	background-image: url(../images/katalog/mainimg/leashes/leashes-1.png);
-	left: 1085px;
 }
 
 .item__bgimgleashes:hover {
@@ -834,7 +854,6 @@ form {
 
 .item__bgimgsubchecks{
 	background-image: url(../images/katalog/mainimg/subchecks/subchecks-1.png);
-	left: 1365px;
 	background-size: 42px;
 }
 
@@ -844,7 +863,6 @@ form {
 
 .item__bgimgfloats {
 	background-image: url(../images/katalog/mainimg/floats/floats-1.png);
-	left: 535px;
 	background-size: 42px;
 }
 
@@ -855,7 +873,6 @@ form {
 
 .item__bgimgbait {
 	background-image: url(../images/katalog/mainimg/bait/bait-1.png);
-	left: 810px;
 	background-size: 42px;
 }
 
@@ -865,7 +882,6 @@ form {
 
 .item__bgimgbaits {
 	background-image: url(../images/katalog/mainimg/baits/baits-1.png);
-	left: 1085px;
 	background-size: 42px;
 }
 
@@ -885,7 +901,6 @@ form {
 
 .item__bgimgchairs {
 	background-image: url(../images/katalog/mainimg/chairs/chairs-1.png);
-	left: 535px;
 	background-size: 38px;
 }
 
@@ -895,7 +910,6 @@ form {
 
 .item__bgimgcovers {
 	background-image: url(../images/katalog/mainimg/covers/covers-1.png);
-	left: 810px;
 	background-size: 42px;
 }
 
@@ -1362,6 +1376,57 @@ footer {
 	.search__t {
 		width: 300xpx;
 	}
+
+	.header__container {
+		padding: 0 150px;
+	}
+
+	#main {
+		padding: 0 70px 0 150px;
+	}
+
+	.header__line {
+		width: 85%;
+	}
+
+	.item__bgimgspin,
+	.item__bgimgcarbines,
+	.item__bgimghooks,
+	.item__bgimgfloats,
+	.item__bgimgchairs {
+		left: 380px;
+	}
+
+	.item__bgimgfishrod,
+	.item__bgimgscales,
+	.item__bgimgclothes,
+	.item__bgimgbait,
+	.item__bgimgcovers {
+		left: 655px;
+	}
+
+	.item__bgimgcoils,
+	.item__bgimgtools,
+	.item__bgimgleashes,
+	.item__bgimgbaits {
+		left: 930px;
+	}
+
+	.item__bgimgbombards,
+	.item__bgimgfeeders,
+	.item__bgimgsubchecks,
+	.item__bgimgcages {
+		left: 1210px;
+	}
+
+	.send {
+		margin-left: 50px;
+	}
+
+	.footer__main {
+		padding: 30px 170px;
+	}
+
 }
 
 @media (min-width: 1331px) and (max-width: 1571px) {
