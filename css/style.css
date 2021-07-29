@@ -2718,6 +2718,50 @@ footer {
 		padding: 10px 20px;
 	}
 
+	.fishline,
+	.fishline_a,
+	.fishrod,
+	.fishrod_a,
+	.spin,
+	.spin_a,
+	.coils,
+	.coils_a,
+	.bombards,
+	.bombards_a,
+	.carbines,
+	.carbines_a,
+	.scales,
+	.scales_a,
+	.sinkers,
+	.sinkers_a,
+	.tools,
+	.tools_a,
+	.feeders,
+	.feeders_a,
+	.hooks,
+	.hooks_a,
+	.clothes,
+	.clothes_a,
+	.leashes,
+	.leashes_a,
+	.subchecks,
+	.subchecks_a,
+	.floats,
+	.floats_a,
+	.bait,
+	.bait_a,
+	.baits,
+	.baits_a,
+	.cages,
+	.cages_a,
+	.chairs,
+	.chairs_a,
+	.covers,
+	.covers_a {
+		background-image: none;
+		margin-left: 25px;
+	}
+
 	.products__item-bgimgfishrod,
 	.products__item-bgimgspin,
 	.products__item-bgimgcoils,
@@ -2917,6 +2961,36 @@ footer {
 
 	.products__item:hover {
 		margin-right: 16px;
+	}
+
+
+	.menu__box {
+		width: 50%;
+		border-radius: 0 0 25px 0;
+		text-align: left;
+	}
+
+	.menu__item {
+		padding: 15px 24px;
+	}
+
+	.menu__box2 {
+		width: 50%;
+		border-radius: 0 0 25px 0;
+		text-align: left;
+	}
+
+	.btn {
+		margin-left: 32.47%;
+	}
+
+	.sign {
+		padding: 15px 20px 50px 20px;
+	}
+
+	.sign__form {
+		width: 215px;
+		height: 20px;
 	}
 
 }
