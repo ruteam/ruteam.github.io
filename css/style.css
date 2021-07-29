@@ -2762,6 +2762,187 @@ footer {
 		margin-left: 25px;
 	}
 
+	.fishline {
+		background-image: none;
+	}
+
+	.fishline:hover,
+	.fishline_a {
+		background-image: none;
+	}
+
+	.fishrod {
+		background-image: none;
+	}
+
+	.fishrod:hover,
+	.fishrod_a {
+		background-image: none;
+	}
+
+	.spin {
+		background-image: none;
+	}
+
+	.spin:hover,
+	.spin_a {
+		background-image: none;
+
+	}
+
+	.coils {
+		background-image: none;
+	}
+
+	.coils:hover,
+	.coils_a {
+		background-image: none;
+	}
+
+	.bombards {
+		background-image: none;
+	}
+
+	.bombards:hover,
+	.bombards_a {
+		background-image: none;
+	}
+
+	.carbines {
+		background-image: none;
+	}
+
+	.carbines:hover,
+	.carbines_a {
+		background-image: none;
+	}
+
+	.scales {
+		background-image: none;
+	}
+
+	.scales:hover,
+	.scales_a {
+		background-image: none;
+	}
+
+	.sinkers {
+		background-image: none;
+	}
+
+	.sinkers:hover,
+	.sinkers_a {
+		background-image: none;
+	}
+
+	.tools {
+		background-image: none;
+	}
+
+	.tools:hover,
+	.tools_a {
+		background-image: none;
+	}
+
+	.feeders {
+		background-image: none;
+	}
+
+	.feeders:hover,
+	.feeders_a {
+		background-image: none;
+	}
+
+	.hooks {
+		background-image: none;
+	}
+
+	.hooks:hover,
+	.hooks_a {
+		background-image: none;
+	}
+
+	.clothes {
+		background-image: none;
+	}
+
+	.clothes:hover,
+	.clothes_a {
+		background-image: none;
+	}
+
+	.leashes {
+		background-image: none;
+	}
+
+	.leashes:hover,
+	.leashes_a {
+		background-image: none;
+	}
+
+	.subchecks {
+		background-image: none;
+	}
+
+	.subchecks:hover,
+	.subchecks_a {
+		background-image: none;
+	}
+
+	.floats {
+		background-image: none;
+	}
+
+	.floats:hover,
+	.floats_a {
+		background-image: none;
+	}
+
+	.bait {
+		background-image: none;
+	}
+
+	.bait:hover,
+	.bait_a {
+		background-image: none;
+	}
+
+	.baits {
+		background-image: none;
+	}
+
+	.baits:hover,
+	.baits_a {
+		background-image: none;
+	}
+
+	.cages {
+		background-image: none;
+	}
+
+	.cages:hover,
+	.cages_a {
+		background-image: none;
+	}
+
+	.chairs {
+		background-image: none;
+	}
+
+	.chairs:hover,
+	.chairs_a {
+		background-image: none;
+	}
+
+	.covers {
+		background-image: none;
+	}
+
+	.covers:hover,
+	.covers_a {
+		background-image: none;
+	}
+
 	.products__item-bgimgfishrod,
 	.products__item-bgimgspin,
 	.products__item-bgimgcoils,
