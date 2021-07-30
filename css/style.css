@@ -976,22 +976,37 @@ form {
 
 
 
-.item__text {
-	display: flex;
-	flex-direction: column;
-}
-
 .products__item-spin {
-	height: 250px;
+	display: inline-block;
+	width: 21%;
+	height: 25%;
 	padding: 0 0 5px;
+	border: 1px solid rgba(29, 174, 255, 0.5);
+	margin-right: 25px;
+	margin-bottom: 22px;
+	transition: box-shadow 0.3s linear;
 }
 
-.item__text {
+.products__item-spin:hover {
+	border: none;
+	box-shadow: 2px 3px 20px rgba(0,0,0,0.5);
+	margin-left: 1px;
+	margin-top: 1px;
+	margin-right: 26px;
+}
+
+.item {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.item__text-catalog {
 	display: flex;
 	flex-direction: column;
 	margin-top: 215px;
 	margin-left: 20px;
 }
+
 
 .item__name {
 	font-family: Roboto Condensed;
@@ -1001,6 +1016,14 @@ form {
 
 .item__name:hover {
 	color: #4834d4;
+}
+
+.item__name-spin {
+	font-family: Roboto Condensed;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 0;
+	margin-top: 15px
 }
 
 .item__photo {
@@ -2693,30 +2716,36 @@ footer {
 /* телефоны вертикально (Moto G4-iphone 6/7/8/X) */
 @media (min-width: 319px) and (max-width: 375px) {
 
+	/********************* СКРЫВАЕМ ЛИШНЕЕ ******************************/
+
 	.searchblock, .kat__head, .sendblock, .footer__logo, .header__logo, .footer__line, .text {
 		display: none;
 	}
 
-	#main {
+	#main, .item {
 		padding: 0;
 	}
 
-	.item__text {
+	/********************* ОТСТУПЫ В ШАПКЕ ******************************/
+
+	.header__container {
+		padding: 10px 20px;
+	}
+
+	/********************* НАЗВАНИЕ КАТЕГОРИИ В КАРТОЧКЕ ТОВАРОВ ******************************/
+
+	.item__text-catalog {
 		margin-top: 95px;
 		margin-left: 10px;
 	}
+
+	/********************* ГЛАВНОЕ ******************************/
 
 	.products {
 		padding: 0 12px;
 	}
 
-	.item {
-		padding: 0;
-	}
-
-	.header__container {
-		padding: 10px 20px;
-	}
+	/********************* НАВИГАЦИЯ В КАТАЛОГЕ ******************************/
 
 	.fishline,
 	.fishline_a,
@@ -2762,182 +2791,121 @@ footer {
 		margin-left: 25px;
 	}
 
-	.fishline {
-		background-image: none;
-	}
-
+	.fishline,
 	.fishline:hover,
 	.fishline_a {
 		background-image: none;
 	}
 
-	.fishrod {
-		background-image: none;
-	}
-
+	.fishrod,
 	.fishrod:hover,
 	.fishrod_a {
 		background-image: none;
 	}
 
-	.spin {
-		background-image: none;
-	}
-
+	.spin,
 	.spin:hover,
 	.spin_a {
 		background-image: none;
-
 	}
 
-	.coils {
-		background-image: none;
-	}
-
+	.coils,
 	.coils:hover,
 	.coils_a {
 		background-image: none;
 	}
 
-	.bombards {
-		background-image: none;
-	}
-
+	.bombards,
 	.bombards:hover,
 	.bombards_a {
 		background-image: none;
 	}
 
-	.carbines {
-		background-image: none;
-	}
-
+	.carbines,
 	.carbines:hover,
 	.carbines_a {
 		background-image: none;
 	}
 
-	.scales {
-		background-image: none;
-	}
-
+	.scales,
 	.scales:hover,
 	.scales_a {
 		background-image: none;
 	}
 
-	.sinkers {
-		background-image: none;
-	}
-
+	.sinkers,
 	.sinkers:hover,
 	.sinkers_a {
 		background-image: none;
 	}
 
-	.tools {
-		background-image: none;
-	}
-
+	.tools,
 	.tools:hover,
 	.tools_a {
 		background-image: none;
 	}
 
-	.feeders {
-		background-image: none;
-	}
-
+	.feeders,
 	.feeders:hover,
 	.feeders_a {
 		background-image: none;
 	}
 
-	.hooks {
-		background-image: none;
-	}
-
+	.hooks,
 	.hooks:hover,
 	.hooks_a {
 		background-image: none;
 	}
 
-	.clothes {
-		background-image: none;
-	}
-
+	.clothes,
 	.clothes:hover,
 	.clothes_a {
 		background-image: none;
 	}
 
-	.leashes {
-		background-image: none;
-	}
-
+	.leashes,
 	.leashes:hover,
 	.leashes_a {
 		background-image: none;
 	}
 
-	.subchecks {
-		background-image: none;
-	}
-
+	.subchecks,
 	.subchecks:hover,
 	.subchecks_a {
 		background-image: none;
 	}
 
-	.floats {
-		background-image: none;
-	}
-
+	.floats,
 	.floats:hover,
 	.floats_a {
 		background-image: none;
 	}
 
-	.bait {
-		background-image: none;
-	}
-
+	.bait,
 	.bait:hover,
 	.bait_a {
 		background-image: none;
 	}
 
-	.baits {
-		background-image: none;
-	}
-
+	.baits,
 	.baits:hover,
 	.baits_a {
 		background-image: none;
 	}
 
-	.cages {
-		background-image: none;
-	}
-
+	.cages,
 	.cages:hover,
 	.cages_a {
 		background-image: none;
 	}
 
-	.chairs {
-		background-image: none;
-	}
-
+	.chairs,
 	.chairs:hover,
 	.chairs_a {
 		background-image: none;
 	}
 
-	.covers {
-		background-image: none;
-	}
-
+	.covers,
 	.covers:hover,
 	.covers_a {
 		background-image: none;
@@ -2964,6 +2932,8 @@ footer {
 	.products__item-bgimgcovers {
 		background-size: 156px;
 	}
+
+	/********************* РАСПОЛОЖЕНИЕ МИНИАТЮР ТОВАРОВ ******************************/
 
 	.item__bgimgspin,
 	.item__bgimgfishrod,
@@ -3062,24 +3032,20 @@ footer {
 		left: 201px;
 	}
 
+	/********************* УВЕДОМЛЕНИЯ ******************************/
 
 	.push {
 		width: 42px;
 	}
 
+	/********************* НАЗВАНИЕ МАГАЗИНА ******************************/
+
 	.name {
 		font-size: 25px;
 	}
 
-	.menu__btn {
-		top: 11px;
-		left: 15px;
-	}
+	/********************* ЗАГОЛОВОК "МЕНЮ" ******************************/
 
-	.menu__btn2 {
-		top: 120px;
-		left: 15px;
-	}
 	.menu__title,
 	.login__nav {
 		font-size: 22px;
@@ -3089,19 +3055,29 @@ footer {
 		margin-left: 30px;
 	}
 
+	/********************* ОТСТУПЫ ВХОДА В ШАПКЕ ******************************/
+
 	.login__nav {
 		margin-left: 10px;
 	}
 
+	/********************* ЗАГОЛОВОК "КАТАЛОГ" ******************************/
+
 	.shopes {
 		margin-left: 30px;
 	}
+
+	/********************* КАРТОЧКИ С ТОВАРАМИ ******************************/
 
 	.products__item {
 		margin-right: 15px;
 		width: 156px;
 		height: 156px;
 		margin-bottom: 15px;
+	}
+
+	.products__item:hover {
+		margin-right: 16px;
 	}
 
 	.products__item:nth-child(5),
@@ -3128,31 +3104,16 @@ footer {
 		margin-right: 0px;
 	}
 
+	/********************* БУРГЕР-МЕНЮ ******************************/
 
-
-
-
-
-
-
-
-
-
-
-
-	.products__item:hover {
-		margin-right: 16px;
+	.menu__item {
+		padding: 15px 24px;
 	}
-
 
 	.menu__box {
 		width: 50%;
 		border-radius: 0 0 25px 0;
 		text-align: left;
-	}
-
-	.menu__item {
-		padding: 15px 24px;
 	}
 
 	.menu__box2 {
@@ -3161,9 +3122,17 @@ footer {
 		text-align: left;
 	}
 
-	.btn {
-		margin-left: 32.47%;
+	.menu__btn {
+		top: 11px;
+		left: 15px;
 	}
+
+	.menu__btn2 {
+		top: 120px;
+		left: 15px;
+	}
+
+	/********************* СТРАНИЦА ВХОДА ******************************/
 
 	.sign {
 		padding: 15px 20px 50px 20px;
@@ -3172,6 +3141,10 @@ footer {
 	.sign__form {
 		width: 215px;
 		height: 20px;
+	}
+
+	.btn {
+		margin-left: 32.47%;
 	}
 
 }
