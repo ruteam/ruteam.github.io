@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @keyframes moveCard {
 	0% { margin-top: 100vh; }
@@ -19,12 +19,40 @@
 
 /** ШАПКА **/
 
+.block-1,
+.block-2,
+.block-3 {
+	display: flex;
+	flex-direction: column;
+	font-family: "Barlow", sans-serif;
+	font-weight: medium;
+	font-size: 18px;
+	color: #1E233A;
+}
+
+.block-1 a,
+.block-2 a,
+.block-3 a {
+	margin: 0 0 12px 0;
+}
+
+
+.block-1 a:hover,
+.block-2 a:hover,
+.block-3 a:hover {
+	text-decoration: underline;
+}
+
+.small {
+	font-size: 17px;
+}
+
 header {
 	background-color: #F4F4F4;
 }
 
 .header__container {
-	padding: 0 310px 0 310px;
+	padding: 0 310px;
 }
 
 .header__logo {
@@ -73,7 +101,9 @@ a {
 }
 
 .push {
+	width: 42px;
 	margin-left: 10px;
+	cursor: pointer;
 }
 
 .header__line {
@@ -85,6 +115,53 @@ a {
 
 /** BODY **/
 
+.intro {
+	width: 100%;
+	height: 575px;
+}
+
+.intro__items {
+	background-image: url(/images/adv-4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -50px;
+	padding: 172px 0 159px 375px;
+}
+
+.intro__item-text p {
+	font-size: 40px;
+	font-family: Roboto;
+	font-weight: bold;
+	margin: 0;
+}
+
+.intro__item-text span {
+	font-size: 35px;
+}
+
+.intro__item-btn {
+	margin-top: 49px;
+}
+
+.intro__item-btn input {
+	text-align: center;
+	font-family: Roboto Condensed;
+	font-weight: medium;
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	width: 250px;
+	height: 53px;
+	background-color: #E74C3C;
+	cursor: pointer;
+	transition: 0.1s linear;
+}
+
+.intro__item-btn input:hover {
+	background-color: #D93120;
+}
+
 body {
 	margin: 0;
 	background-color: #F8F8F8;
@@ -93,6 +170,20 @@ body {
 }
 
 /****************** КАТАЛОГ *****************/
+
+.popular {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rod-1 {
+	margin-right: 15px;
+}
+
+.rod-2 {
+	margin-left: 15px;
+}
 
 .pick {
 	color: #213691;
@@ -114,6 +205,11 @@ body {
 #main {
 	display: flex;
 	padding: 0 230px 0 310px;
+}
+
+.main__index {
+	display: flex;
+	flex-direction: column;
 }
 
 .move__animation {
@@ -485,6 +581,10 @@ body {
 	margin: 0 0 22px 0;
 }
 
+.search {
+	margin-right: 15px;
+}
+
 .search-cat {
 	margin-left: 320px;
 }
@@ -493,14 +593,13 @@ body {
 
 .searchicon {
 	position: relative;
-	left: 40px;
+	left: 20px;
 	width: 18px;
-	margin-right: 10px;
+	top: -1px;
 }
 
 form {
 	display: flex;
-
 }
 
 .search__t, .send__t {
@@ -509,27 +608,31 @@ form {
 	width: 150px;
 	outline: none;
 	padding-left: 7px;
-	color: #6798e3;
+	color: #5196FF;;
 	font-size: 18px;
 }
 
 .search__t {
 	display: flex;
-	background: #FFFFFF;
-	border: 2px solid #fff;
-	border-radius: 36px;
+	background: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.25);
 	width: 150px;
-	height: 35px;
-	padding-left: 35px;
+	height: 30px;
+	padding-left: 30px;
 	padding-right: 10px;
 	align-items: center;
 	transition: 0.2s linear;
+	font-size: 20px;
 }
 
 .search__t:focus {
 	width: 230px;
 }
 
+.send__t::placeholder,
+.search__t::placeholder {
+	color: #5196FF;
+}
 
 .photo {
 	width: 92.5%;
@@ -553,7 +656,13 @@ form {
 
 /***************** ТОВАРЫ *****************/
 
-.products__item {
+.products__container {
+	margin-top: 10px;
+	padding: 0 310px;
+}
+
+.products__item,
+.products__item-main {
 	display: inline-block;
 	width: 245px;
 	height: 250px;
@@ -561,9 +670,18 @@ form {
 	margin-right: 25px;
 	margin-bottom: 22px;
 	transition: box-shadow 0.2s linear;
+	cursor: pointer;
 }
 
-.products__item:hover {
+.products__item-main {
+	width: 240px;
+	height: 245px;
+	margin-right: 14.5px;
+	margin-bottom: 18px;
+}
+
+.products__item:hover,
+.products__item-main:hover {
 	border: none;
 	box-shadow: 2px 3px 20px rgba(0,0,0,0.5);
 	margin-left: 1px;
@@ -571,13 +689,23 @@ form {
 	margin-right: 26px;
 }
 
+.products__item-main:hover {
+	margin-right: 15.5px;
+}
+
+.products__item-main:nth-child(6),
 .products__item:nth-child(7),
+.products__item-main:nth-child(11),
 .products__item:nth-child(11),
 .products__item:nth-child(15),
+.products__item-main:nth-child(16),
 .products__item:nth-child(19) {
 	margin-right: 0px;
 }
 
+.products__item-main:nth-child(6):hover,
+.products__item-main:nth-child(11):hover,
+.products__item-main:nth-child(16):hover,
 .products__item:nth-child(7):hover,
 .products__item:nth-child(11):hover,
 .products__item:nth-child(15):hover,
@@ -705,16 +833,13 @@ form {
 .item__bgimgcovers {
 	position: absolute;
 	padding-top: 50px;
-	top: 598px;
+	top: 587px;
 	background-repeat: no-repeat;
 	background-size: 50px;
-	width: 244px;
-	height: 200px;
+	background-position: 20px 10px;
+	width: 245px;
+	height: 201px;
 	animation: moveCard 0.6s 1;
-}
-
-.it123 {
-	padding: 200px;
 }
 
 .item__bgimgcarbines,
@@ -723,26 +848,26 @@ form {
 .item__bgimgtools,
 .item__bgimgfeeders,
 .item__bgimghooks {
-	top: 875px;
+	top: 861px;
 }
 
 .item__bgimghooks,
 .item__bgimgclothes,
 .item__bgimgleashes,
 .item__bgimgsubchecks {
-	top: 1150px;
+	top: 1136px;
 }
 
 .item__bgimgfloats,
 .item__bgimgbait,
 .item__bgimgbaits,
 .item__bgimgcages {
-	top: 1425px;
+	top: 1409px;
 }
 
 .item__bgimgchairs,
 .item__bgimgcovers {
-	top: 1700px;
+	top: 1684px;
 }
 
 .item__bgimgspin,
@@ -750,7 +875,7 @@ form {
 .item__bgimghooks,
 .item__bgimgfloats,
 .item__bgimgchairs {
-	left: 535px;
+	left: 517px;
 }
 
 .item__bgimgfishrod,
@@ -758,21 +883,21 @@ form {
 .item__bgimgclothes,
 .item__bgimgbait,
 .item__bgimgcovers {
-	left: 810px;
+	left: 793px;
 }
 
 .item__bgimgcoils,
 .item__bgimgtools,
 .item__bgimgleashes,
 .item__bgimgbaits {
-	left: 1085px;
+	left: 1068px;
 }
 
 .item__bgimgbombards,
 .item__bgimgfeeders,
 .item__bgimgsubchecks,
 .item__bgimgcages {
-	left: 1365px;
+	left: 1344px;
 }
 
 .item__bgimgspin {
@@ -909,7 +1034,6 @@ form {
 
 .item__bgimgcages{
 	background-image: url(../images/katalog/mainimg/cages/cages-1.png);
-	left: 1365px;
 	background-size: 42px;
 }
 
@@ -935,45 +1059,254 @@ form {
 	background-image: url(../images/katalog/mainimg/covers/covers-2.png);
 }
 
+.item__bgimgspin-main,
+.item__bgimgfishrod-main,
+.item__bgimgcoils-main,
+.item__bgimgbombards-main,
+.item__bgimgcarbines-main,
+.item__bgimgscales-main,
+.item__bgimgsinkers-main,
+.item__bgimgtools-main,
+.item__bgimgfeeders-main,
+.item__bgimghooks-main,
+.item__bgimgclothes-main,
+.item__bgimgleashes-main,
+.item__bgimgsubchecks-main,
+.item__bgimgfloats-main,
+.item__bgimgbait-main,
+.item__bgimgbaits-main,
+.item__bgimgcages-main,
+.item__bgimgchairs-main,
+.item__bgimgcovers-main {
+	position: absolute;
+	padding-top: 50px;
+	top: 734px;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: 20px 10px;
+	width: 241px;
+	height: 195px;
+	animation: moveCard 0.6s 1;
+}
+
+.item__bgimgscales-main,
+.item__bgimgtools-main,
+.item__bgimgfeeders-main,
+.item__bgimgsinkers-main,
+.item__bgimghooks-main,
+.item__bgimgclothes-main {
+	top: 1003px;
+}
+
+.item__bgimgleashes-main,
+.item__bgimgfloats-main,
+.item__bgimgbait-main,
+.item__bgimgbaits-main,
+.item__bgimgsubchecks-main {
+	top: 1272px;
+}
+
+.item__bgimgcages-main,
+.item__bgimgchairs-main,
+.item__bgimgcovers-main {
+	top: 1541px;
+}
+
+.item__bgimgspin-main,
+.item__bgimgscales-main,
+.item__bgimgcarbines-main,
+.item__bgimgleashes-main,
+.item__bgimgfloats-main,
+.item__bgimgcages-main,
+.item__bgimgchairs-main {
+	left: 310px;
+}
+
+.item__bgimgfishrod-main,
+.item__bgimgtools-main,
+.item__bgimgsubchecks-main,
+.item__bgimgchairs-main {
+	left: 571px;
+}
+
+.item__bgimgcoils-main,
+.item__bgimgfeeders-main,
+.item__bgimgfloats-main,
+.item__bgimgbaits-main,
+.item__bgimgcovers-main {
+	left: 831px;
+}
+
+.item__bgimgbombards-main,
+.item__bgimghooks-main,
+.item__bgimgbait-main {
+	left: 1092px;
+}
+
+.item__bgimgcarbines-main,
+.item__bgimgclothes-main,
+.item__bgimgbaits-main {
+	left: 1352px;
+}
+
+.item__bgimgspin-main {
+	background-image: url(../images/katalog/mainimg/spin/spin-1.png);
+}
+
+.item__bgimgspin-main:hover {
+	background-image: url(../images/katalog/mainimg/spin/spin-2.png);
+}
+
+.item__bgimgfishrod-main{
+	background-image: url(../images/katalog/mainimg/fishrod/fishrod-1.png);
+	background-size: 40px;
+}
+
+.item__bgimgfishrod-main:hover {
+	background-image: url(../images/katalog/mainimg/fishrod/fishrod-2.png);
+}
+
+.item__bgimgcoils-main {
+	background-image: url(../images/katalog/mainimg/coils/coils-1.png);
+}
+
+.item__bgimgcoils-main:hover {
+	background-image: url(../images/katalog/mainimg/coils/coils-2.png);
+}
+
+.item__bgimgbombards-main {
+	background-image: url(../images/katalog/mainimg/bombards/bombards-1.png);
+	background-size: 40px;
+}
+
+.item__bgimgbombards-main:hover {
+	background-image: url(../images/katalog/mainimg/bombards/bombards-2.png);
+}
+
+.item__bgimgcarbines-main {
+	background-image: url(../images/katalog/mainimg/carbines/carbines-1.png);
+	background-size: 42px;
+}
+
+.item__bgimgcarbines-main:hover {
+	background-image: url(../images/katalog/mainimg/carbines/carbines-2.png);
+}
+
+.item__bgimgscales-main {
+	background-image: url(../images/katalog/mainimg/scales/scales-1.png);
+	background-size: 45px;
+}
+
+.item__bgimgscales-main:hover {
+	background-image: url(../images/katalog/mainimg/scales/scales-2.png);
+}
+
+.item__bgimgtools-main {
+	background-image: url(../images/katalog/mainimg/tools/tools-1.png);
+	background-size: 42px;
+}
+
+.item__bgimgtools-main:hover {
+	background-image: url(../images/katalog/mainimg/tools/tools-2.png);
+}
+
+.item__bgimgfeeders-main {
+	background-image: url(../images/katalog/mainimg/feeders/feeders-1.png);
+	background-size: 42px;
+}
+
+.item__bgimgfeeders-main:hover {
+	background-image: url(../images/katalog/mainimg/feeders/feeders-2.png);
+}
+
+.item__bgimghooks-main {
+	background-image: url(../images/katalog/mainimg/hooks/hooks-1.png);
+	background-size: 40px;
+}
+
+.item__bgimghooks-main:hover {
+	background-image: url(../images/katalog/mainimg/hooks/hooks-2.png);
+}
+
+.item__bgimgclothes-main {
+	background-image: url(../images/katalog/mainimg/clothes/clothes-1.png);
+}
+
+.item__bgimgclothes-main:hover {
+	background-image: url(../images/katalog/mainimg/clothes/clothes-2.png);
+}
+
+.item__bgimgleashes-main {
+	background-image: url(../images/katalog/mainimg/leashes/leashes-1.png);
+}
+
+.item__bgimgleashes-main:hover {
+	background-image: url(../images/katalog/mainimg/leashes/leashes-2.png);
+}
+
+.item__bgimgsubchecks-main{
+	background-image: url(../images/katalog/mainimg/subchecks/subchecks-1.png);
+	background-size: 42px;
+}
+
+.item__bgimgsubchecks-main:hover {
+	background-image: url(../images/katalog/mainimg/subchecks/subchecks-2.png);
+}
+
+.item__bgimgfloats-main {
+	background-image: url(../images/katalog/mainimg/floats/floats-1.png);
+	background-size: 42px;
+}
+
+.item__bgimgfloats-main:hover {
+	background-image: url(../images/katalog/mainimg/floats/floats-2.png);
+}
 
 
+.item__bgimgbait-main {
+	background-image: url(../images/katalog/mainimg/bait/bait-1.png);
+	background-size: 42px;
+}
 
+.item__bgimgbait-main:hover {
+	background-image: url(../images/katalog/mainimg/bait/bait-2.png);
+}
 
+.item__bgimgbaits-main {
+	background-image: url(../images/katalog/mainimg/baits/baits-1.png);
+	background-size: 42px;
+}
 
+.item__bgimgbaits-main:hover {
+	background-image: url(../images/katalog/mainimg/baits/baits-2.png);
+}
 
+.item__bgimgcages-main{
+	background-image: url(../images/katalog/mainimg/cages/cages-1.png);
+	background-size: 42px;
+}
 
+.item__bgimgcages-main:hover {
+	background-image: url(../images/katalog/mainimg/cages/cages-2.png);
+}
 
+.item__bgimgchairs-main {
+	background-image: url(../images/katalog/mainimg/chairs/chairs-1.png);
+	background-size: 38px;
+}
 
+.item__bgimgchairs-main:hover {
+	background-image: url(../images/katalog/mainimg/chairs/chairs-2.png);
+}
 
+.item__bgimgcovers-main {
+	background-image: url(../images/katalog/mainimg/covers/covers-1.png);
+	background-size: 42px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.item__bgimgcovers-main:hover {
+	background-image: url(../images/katalog/mainimg/covers/covers-2.png);
+}
 
 
 .products__item-spin {

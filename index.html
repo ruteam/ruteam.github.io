@@ -21,6 +21,7 @@
 					<div class="menu__title">Меню</div>
 					<ul class="nav menu__box">
 						<li class="nav__name"><a class="menu__item opacity pick" href="index.html">Главная</a></li>
+						<li class="nav__name"><a class="menu__item opacity" href="catalog.html">Каталог</a></li>
 						<li class="nav__name"><a class="menu__item opacity" href="#">О&nbspмагазине</a></li>
 						<li class="nav__name"><a class="menu__item opacity" href="#"> Доставка</a></li>
 						<li class="nav__name"><a class="menu__item opacity" href="#contacts">Контакты</a></li>
@@ -31,248 +32,212 @@
 						<li class="login__nav"><a class="opacity" href="login.html">Вход</a></li>
 						<li class="login__nav"><a class="opacity" href="#">Корзина</a></li>
 					</ul>
-					<img src="images/push.svg" class="push">
 					<div class="search">
 						<div class="searchblock">
 							<form>
-								<img src="images/search/search.svg" class="searchicon">
-								<input type="text" class="search__t" placeholder="Search">
+								<img src="images/search/Vector.svg" class="searchicon">
+								<input type="text" class="search__t" placeholder="Поиск">
 							</form>
 						</div>
 					</div>
+					<img src="images/push.svg" class="push">
 				</div>
 			</div>
 		</div>
 		<div class="header__line"></div>
 	</header>
 
-	<main id="main" class="move__animation">
-		<div class="container">
-			<div>
-				<h2 class="kat__head">КАТАЛОГ</h2>
-				<div class="kat__item hamburger-menu">
-					<input id="menu__toggle2" type="checkbox" />
-        			<label class="menu__btn2" for="menu__toggle2">
-          				<span></span>
-        			</label>
-					<ul class="kat__nav menu__box2">
-						<li class="kat__nav__line"><a class="menu__item2 padding fishline" href="#">Леска</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding fishrod" href="fishrod.html">Удилища</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding spin" href="spin.html">Спиннинги</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding coils" href="#">Катушки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding bombards" href="#">Бомбарды</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding carbines" href="#">Карабины</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding scales" href="#">Весы</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding sinkers" href="#">Грузила</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding tools" href="#">Инструменты</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding feeders" href="#">Кормушки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding hooks" href="#">Крючки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding clothes" href="#">Одежда</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding leashes" href="#">Поводки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding subchecks" href="#">Подсачеки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding floats" href="#">Поплавки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding bait" href="#">Прикормки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding baits" href="baits.html">Приманки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding cages" href="#">Садки</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding chairs" href="#">Туристам</a></li>
-						<li class="kat__nav__line"><a class="menu__item2 padding covers" href="#">Чехлы</a></li>
-					</ul>
+	<main class="move__animation main__index">
+		<div class="intro">
+			<div class="intro__items">
+				<div class="intro__item-text">
+					<p>Лучший подарок<br><span>- это подарочный<br>сертификат</span></p>
 				</div>
-
+				<div class="intro__item-btn">
+					<input type="button" value="Выбрать сертификат">
+				</div>
 			</div>
-			<article class="text">
-				<h1 class="texth1">ПРИМЕТА РЫБАКА</h1>
-				<div class="blackline"></div>
-				<div class="textblock">
-					<p class="mytext">
-						Летом лучший клев бывает вслед за рассветом, средний - вечером и худший - среди дня.
-					</p>
-				</div>
-			</article>
 		</div>
-
-		<div class="products">
-			<div class="main">
-				<div class="block">
-					<h2 class="name">Всё&nbspдля&nbspудачной&nbspрыбалки!</h2>
-				</div>
-			</div>
-			<div class="block__photo"><img src="images/adv-1.jpg" class="photo"></div>
-			<h2 class="shopes"><span class="kat__head2">КАТАЛОГ</span><img src="images/strelka.svg" class="strelka"><span class="shopes2">Товары</span></h2>
-			<div class="products__item products__item-bgimgspin">
+		<div class="products__container">
+			<h2 class="shopes">
+				<span class="kat__head2">КАТАЛОГ</span>
+				<img src="images/strelka.svg" class="strelka">
+				<span class="shopes2 popular"><img src="images/rod-1.png"class="rod-1">Популярные категории<img src="images/rod-2.png"class="rod-2"></span>
+			</h2>
+			<div class="products__item-main products__item-bgimgspin">
 				<a href="spin.html">
 					<div>
-						<div class="item__bgimgspin"></div>
+						<div class="item__bgimgspin-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Спиннинги</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgfishrod">
+			<div class="products__item-main products__item-bgimgfishrod">
 				<a href="fishrod.html">
 					<div>
-						<div class="item__bgimgfishrod"></div>
+						<div class="item__bgimgfishrod-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Удилища</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgcoils">
+			<div class="products__item-main products__item-bgimgcoils">
 				<a href="#">
 					<div>
-						<div class="item__bgimgcoils"></div>
+						<div class="item__bgimgcoils-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Катушки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgbombards">
+			<div class="products__item-main products__item-bgimgbombards">
 				<a href="#">
 					<div>
-						<div class="item__bgimgbombards"></div>
+						<div class="item__bgimgbombards-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Бомбарды</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgcarbines">
+			<div class="products__item-main products__item-bgimgcarbines">
 				<a href="#">
 					<div>
-						<div class="item__bgimgcarbines"></div>
+						<div class="item__bgimgcarbines-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Карабины</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgscales">
+			<div class="products__item-main products__item-bgimgscales">
 				<a href="#">
 					<div>
-						<div class="item__bgimgscales"></div>
+						<div class="item__bgimgscales-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Весы</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgtools">
+			<div class="products__item-main products__item-bgimgtools">
 				<a href="#">
 					<div>
-						<div class="item__bgimgtools"></div>
+						<div class="item__bgimgtools-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Инструменты</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgfeeders">
+			<div class="products__item-main products__item-bgimgfeeders">
 				<a href="#">
 					<div>
-						<div class="item__bgimgfeeders"></div>
+						<div class="item__bgimgfeeders-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Кормушки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimghooks">
+			<div class="products__item-main products__item-bgimghooks">
 				<a href="#">
 					<div>
-						<div class="item__bgimghooks"></div>
+						<div class="item__bgimghooks-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Крючки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgclothes">
+			<div class="products__item-main products__item-bgimgclothes">
 				<a href="#">
 					<div>
-						<div class="item__bgimgclothes"></div>
+						<div class="item__bgimgclothes-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Одежда</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgleashes">
+			<div class="products__item-main products__item-bgimgleashes">
 				<a href="#">
 					<div>
-						<div class="item__bgimgleashes"></div>
+						<div class="item__bgimgleashes-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Поводки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgsubchecks">
+			<div class="products__item-main products__item-bgimgsubchecks">
 				<a href="#">
 					<div>
-						<div class="item__bgimgsubchecks"></div>
+						<div class="item__bgimgsubchecks-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Подсачеки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgfloats">
+			<div class="products__item-main products__item-bgimgfloats">
 				<a href="#">
 					<div>
-						<div class="item__bgimgfloats"></div>
+						<div class="item__bgimgfloats-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Поплавки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgbait">
+			<div class="products__item-main products__item-bgimgbait">
 				<a href="#">
 					<div>
-						<div class="item__bgimgbait"></div>
+						<div class="item__bgimgbait-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Прикормки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgbaits">
+			<div class="products__item-main products__item-bgimgbaits">
 				<a href="#">
 					<div>
-						<div class="item__bgimgbaits"></div>
+						<div class="item__bgimgbaits-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Приманки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgcages">
+			<div class="products__item-main products__item-bgimgcages">
 				<a href="#">
 					<div>
-						<div class="item__bgimgcages"></div>
+						<div class="item__bgimgcages-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Садки</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgchairs">
+			<div class="products__item-main products__item-bgimgchairs">
 				<a href="#">
 					<div>
-						<div class="item__bgimgchairs"></div>
+						<div class="item__bgimgchairs-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Туристам</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="products__item products__item-bgimgcovers">
+			<div class="products__item-main products__item-bgimgcovers">
 				<a href="#">
 					<div>
-						<div class="item__bgimgcovers"></div>
+						<div class="item__bgimgcovers-main"></div>
 						<div class="item__text-catalog">
 							<p class="item__name">Чехлы</p>
 						</div>
@@ -287,13 +252,31 @@
 
 		<div class="footer__main">
 
-			<img src="images/fl.png" class="footer__logo">
 
-			<div class="send">
+		<!--
+			 <div class="send">
 				<div class="sendblock">
 					<input type="text" class="send__t" placeholder="Рассылка">
 					<img src="images/Send Icon.png" class="sendicon">
 				</div>
+			</div>
+		-->
+			<div class="block-1">
+				<a href="catalog.html">КАТАЛОГ</a>
+				<a href="#">АКЦИИ</a>
+				<a href="#">БРЕНДЫ</a>
+			</div>
+
+			<div class="block-2">
+				<a href="#">КОМПАНИЯ</a>
+				<a href="#" class="small">О компании</a>
+				<a href="#" class="small">Контакты</a>
+			</div>
+
+			<div class="block-3">
+				<a href="#">ИНФОРМАЦИЯ</a>
+				<a  href="#"class="small">Реквизиты</a>
+				<a  href="#"class="small">Оплата</a>
 			</div>
 
 			<div class="contacts" id="contacts">
@@ -305,11 +288,6 @@
 					<div class="contacts__icon">
 						<img src="images/contacts/phone.svg" class="contacts__icon1">
 						<p class="contacts__text">+78005003535</p>
-					</div>
-
-					<div class="contacts__icon">
-						<img src="images/contacts/whatsapp.svg" class="contacts__icon1">
-						<p class="contacts__text">Whatsapp</p>
 					</div>
 
 					<div class="contacts__icon">
