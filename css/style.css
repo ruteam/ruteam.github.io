@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 @keyframes moveCard {
 	0% { margin-top: 100vh; }
@@ -18,34 +19,6 @@
 }
 
 /** ШАПКА **/
-
-.block-1,
-.block-2,
-.block-3 {
-	display: flex;
-	flex-direction: column;
-	font-family: "Barlow", sans-serif;
-	font-weight: medium;
-	font-size: 18px;
-	color: #1E233A;
-}
-
-.block-1 a,
-.block-2 a,
-.block-3 a {
-	margin: 0 0 12px 0;
-}
-
-
-.block-1 a:hover,
-.block-2 a:hover,
-.block-3 a:hover {
-	text-decoration: underline;
-}
-
-.small {
-	font-size: 17px;
-}
 
 header {
 	background-color: #F4F4F4;
@@ -121,7 +94,7 @@ a {
 }
 
 .intro__items {
-	background-image: url(/images/adv-4.png);
+	background-image: url(../images/adv-4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 -50px;
@@ -256,7 +229,7 @@ body {
 .kat__nav__line {
 	border-bottom: 1px solid rgba(129, 129, 129, 0.25);
 	display: block;
-	padding-top: 5px;
+	padding-top: 8px;
 	width: 175px;
 }
 
@@ -305,7 +278,7 @@ body {
 	background-repeat: no-repeat;
 	margin-left: 8px;
 	background-size: contain;
-	transition: 0.1s linear;
+	transition: 0.1s;
 }
 
 .fishline_a,
@@ -600,6 +573,15 @@ body {
 
 form {
 	display: flex;
+}
+
+.send {
+	position: relative;
+	width: 340px;
+	top: -40px;
+	left: 310px;
+	margin: 0;
+	margin-top: 25px;
 }
 
 .search__t, .send__t {
@@ -1328,6 +1310,16 @@ form {
 	margin-right: 26px;
 }
 
+.products__item-spin:nth-child(7),
+.products__item-spin:nth-child(11) {
+	margin-right: 25px;
+}
+
+.products__item-spin:nth-child(7):hover,
+.products__item-spin:nth-child(11):hover {
+	margin-right: 26px;
+}
+
 .item {
 	text-align: center;
 	padding: 5px 0;
@@ -1374,34 +1366,102 @@ form {
 
 .tovar__item {
 	display: flex;
-	justify-content: center;
 	margin-top: 40px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+	margin-left: 100px;
 }
 
 .tovar__item-img {
-	width: 25%;
+	width: 300px;
+	height: 280px;
+	transition: 0.3s;
+}
+
+.tovar__item-img:hover {
+	transform: scale(2);
 }
 
 .tovar__item-text {
-	margin-left: 100px;
+	font-family: 'Roboto Mono', monospace;
+	margin-left: 120px;
 	margin-right: 50px;
 }
 
-.tovar-price {
+.rating {
+	cursor: pointer;
+	width: 52%;
+}
+
+.rating img {
+	width: 18px;
+}
+
+.tovar__item-name {
+	font-size: 20px;
+}
+
+.tovar__item-price {
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 28px;
+}
+
+.deshevo {
+	display: flex;
+	align-items: center;
+}
+
+.deshevo a {
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.deshevo a:hover {
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.9);
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.deshevo img {
+	margin-bottom: 3px;
+	margin-right: 5px;
+	width: 16px;
+}
+
+.count {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	padding: 10px;
+	background-color: #ecf0f1;
+	width: 120px;
+	font-size: 18px;
+	color: #636e72;
+}
+
+.count p {
+	margin: 0 41px;
+}
+
+.min {
+	opacity: 0.6;
+	cursor: pointer;
+	width: 12px;
+	height: 2px;
+}
+
+.plus {
+	cursor: pointer;
+	width: 12px;
 }
 
 .tovar-btn {
 	padding: 0 70px;
-	margin-top: 120px;
-	height: 15%;
+	margin-top: 30px;
+	height: 45px;
 	font-family: Roboto;
 	font-size: 17px;
-	border-radius: 5px;
+	border-radius: 3px;
 	border: none;
-	background-color: #b33939;
+	background-color: #d63031;
 	color: #fff;
 	cursor: pointer;
 	transition: transform .1s;
@@ -1419,13 +1479,45 @@ form {
 	animation: buy .7s 1;
 }
 
+.tovar__item-var {
+	display: flex;
+}
+
+.var {
+	cursor: pointer;
+	padding: 3px;
+	width: 60px;
+	margin-right: 16px;
+}
+
+.active {
+	border: 2px solid #c01f3c;
+}
+
+
+
 .tovar-fishing {
 	width: 42%;
 	height: 283px;
 }
 
 .tovar__description {
+	margin-top: 50px;
 	padding-right: 50px;
+}
+
+.tovar__description-title a {
+	margin-left: 15px;
+	font-size: 22px;
+}
+
+.tovar__description-title a:hover {
+	color: #c01f3c;
+}
+
+.title__active {
+	color: #c01f3c;
+	border-bottom: 1px solid #c01f3c;
 }
 
 .tovar__description-text {
@@ -1456,7 +1548,7 @@ form {
 
 footer {
 	background: #F4F4F4;
-	color: #1E233A;
+	color: #b3b3b7;
 	margin-top: 5%;
 }
 
@@ -1466,71 +1558,95 @@ footer {
 	padding: 30px 320px;
 }
 
-.footer__logo {
-	width: 160px;
-	height: 160px;
-	margin-top: 70px;
+.block-1,
+.block-2,
+.block-3,
+.block-4 {
+	display: flex;
+	flex-direction: column;
+	font-family: "Barlow", sans-serif;
+	font-weight: medium;
+	font-size: 18px;
+}
+
+.block-1 a,
+.block-2 a,
+.block-3 a {
+	margin: 0 0 12px 0;
+	color: #b3b3b7;
+}
+
+.block-1 a {
+	color: #5d5d5d;
+}
+
+.block-4 a {
+	margin: 0 0 12px 0;
+	color: #b3b3b3;
+}
+
+.block-1 a:hover,
+.block-2 a:hover,
+.block-3 a:hover,
+.block-4 a:hover {
+	text-decoration: underline;
+}
+
+.block-1 p,
+.block-2 p,
+.block-3 p {
+	margin: 0;
+	margin-bottom: 12px;
+	color: #5d5d5d;
+}
+
+.block__a-1 {
+	color: #5d5d5d !important;
+}
+
+.small {
+	font-size: 17px;
+}
+
+.tel {
+	font-size: 26px;
+	color: #5d5d5d !important;
 }
 
 /********************* РАССЫЛКА ************/
-
-.send {
-	margin-top: 35px;
-}
 
 .sendblock {
 	display: flex;
 	padding: 8px;
 	padding-left: 15px;
 	background: #FFFFFF;
-	border-radius: 36px;
-	width: 400px;
-	height: 50px;
+	border-radius: 20px;
+	width: 320px;
+	height: 38px;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .send__t {
-	font-family: "Barlow", sans-serif;
+	font-family: Roboto Condensed;
 	font-size: 20px;
-	width: 345px;
+	width: 288px;
 	padding-left: 0;
 }
 
+.send__t::placeholder {
+	color: #b3b3b7;
+}
 
 .sendicon {
-	margin: 0;
+	width: 37px;
+	margin-right: 8px;
+	cursor: pointer;
 }
 
 /****************** КОНТАКТЫ ****************/
 
-.contacts__name {
-	font-family: "Barlow", sans-serif;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	display: flex;
-	margin: 0 0 15px 0;
-}
 
-.contacts__icon {
-	display: flex;
-}
-
-.contacts__icon1 {
-	padding-right: 5px;
-}
-
-.contacts__icon2 {
-	padding-right: 8px;
-}
-
-.contacts__text {
-	font-family: "Barlow", sans-serifs;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-}
 
 /************** СОЦ. СЕТИ ******************/
 
@@ -1682,6 +1798,10 @@ footer {
 .menu__btn2 {
 	z-index: 3;
 }
+
+/*** РЕЙТИНГ ***/
+
+
 
 @media (min-width: 2180px) {
 
