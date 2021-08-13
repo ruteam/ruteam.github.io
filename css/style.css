@@ -617,7 +617,7 @@ form {
 }
 
 .photo {
-	width: 92.5%;
+	width: 1074px;
 	height: 366px;
 	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 }
@@ -1293,8 +1293,8 @@ form {
 
 .products__item-spin {
 	display: inline-block;
-	width: 21%;
-	height: 25%;
+	width: 245px;
+	height: 250px;
 	padding: 0 0 5px;
 	border: 1px solid rgba(29, 174, 255, 0.5);
 	margin-right: 25px;
@@ -1375,6 +1375,7 @@ form {
 	width: 300px;
 	height: 280px;
 	transition: 0.3s;
+	z-index: 1000;
 }
 
 .tovar__item-img:hover {
@@ -1403,6 +1404,7 @@ form {
 .tovar__item-price {
 	font-weight: bold;
 	font-size: 28px;
+	margin-bottom: 10px;
 }
 
 .deshevo {
@@ -1429,7 +1431,7 @@ form {
 .count {
 	display: flex;
 	align-items: center;
-	margin-top: 15px;
+	margin-top: 30px;
 	padding: 10px;
 	background-color: #ecf0f1;
 	width: 120px;
@@ -1488,6 +1490,10 @@ form {
 	padding: 3px;
 	width: 60px;
 	margin-right: 16px;
+}
+
+.var:hover {
+	box-shadow: 0 0 10px #c01f3c;
 }
 
 .active {
