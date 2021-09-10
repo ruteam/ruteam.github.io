@@ -18,6 +18,64 @@
 	100% { transform: scale(1); }
 }
 
+.carousel {
+    position: relative;
+    width: 1074px;
+}
+
+.carousel img {
+	width: 1074px;
+	height: 366px;
+	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+}
+
+  .arrow {
+    position: absolute;
+    top: 88%;     /* располагаем стрелки примерно посередине карусели */
+    padding: 2px;
+    font-size: 18px;
+    color: #000;
+    display: block;
+	z-index: 1;
+	opacity: 0.3;
+	border-radius: 12px;
+  }
+
+  .arrow:hover {
+    opacity: 0.8;
+  }
+
+  .prev {
+    left: 515px;
+  }
+
+  .next {
+    right: 515px;
+  }
+
+  .gallery {
+    width: 1074px;
+    overflow: hidden;
+  }
+
+  .gallery ul {
+    height: 369px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 200ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    font-size: 0;
+  }
+
+  .gallery li {
+    display: inline-block;
+  }
+
+
 /** ШАПКА **/
 
 header {
@@ -1715,15 +1773,16 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	padding: 130px 340px 80px 300px;
+	padding: 0 340px 80px 300px;
+	margin-top: 130px;
 }
 
 .sign {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	animation: moveCard 0.5s 1;
 	background-color: #fff;
 	font-family: 'Roboto Condensed', sans-serif;;
 	padding: 30px 40px 50px 40px;
+	animation: moveCard 0.5s 1;
 }
 
 .sign__item-form {
