@@ -23,5 +23,5 @@ minus.onclick = function() {
 // Уведомление о покупке
 let a = document.querySelector(".tovar-btn");
 a.onclick = function () {
-	alert("Спасибо за покупку! Приходите еще!");
+	alert("Спасибо за покупку (" + k + " шт.)! " + "Заглядывайте еще!");
 }
