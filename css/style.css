@@ -702,7 +702,7 @@ form {
   border: 1px solid rgba(29, 174, 255, 0.5);
   margin-right: 25px;
   margin-bottom: 22px;
-  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.4s ease;
   cursor: pointer;
 }
 
@@ -716,7 +716,7 @@ form {
 .products__item:hover,
 .products__item-main:hover {
   border: none;
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 16px rgb(0 0 0 / 23%);
   margin-left: 1px;
   margin-top: 1px;
   margin-right: 26px;
@@ -730,7 +730,6 @@ form {
 .products__item:nth-child(7),
 .products__item-main:nth-child(11),
 .products__item:nth-child(11),
-.products__item:nth-child(15),
 .products__item-main:nth-child(16),
 .products__item:nth-child(19) {
   margin-right: 0px;
@@ -741,7 +740,6 @@ form {
 .products__item-main:nth-child(16):hover,
 .products__item:nth-child(7):hover,
 .products__item:nth-child(11):hover,
-.products__item:nth-child(15):hover,
 .products__item:nth-child(19):hover {
   margin-right: 0px;
 }
@@ -1342,17 +1340,17 @@ form {
 .products__item-spin {
   display: inline-block;
   width: 245px;
-  height: 250px;
+  height: auto;
   padding: 0 0 5px;
   border: 1px solid rgba(29, 174, 255, 0.5);
   margin-right: 25px;
   margin-bottom: 22px;
-  transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.4s ease;
 }
 
 .products__item-spin:hover {
   border: none;
-  box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 16px rgb(0 0 0 / 23%);
   margin-left: 1px;
   margin-top: 1px;
   margin-right: 26px;
