@@ -48,23 +48,23 @@
 	</header>
 
 	<main class="container__login">
-		<div class="sign">
+		<div class="sign" id="form">
 			<div class="sign__item">
 				<div class="sign__item-form">
 					<div class="sign__item-file">
-						<p class="sign__item-file__text">Логин</p>
-						<input type="text" class="sign__form form-login">
+						<p  class="sign__item-file__text">Логин</p>
+						<input name="login" type="text" class="sign__form form-login _req _login">
 					</div>
 					<div class="sign__item-file">
 						<p class="sign__item-file__text">Пароль</p>
-						<input type="password" class="sign__form form-password">
+						<input name="password" type="password" class="sign__form form-password _req _password">
 					</div>
 				</div>
 			</div>
 			<div class="fd">
 				<input type="checkbox" class="c1"><span class="check">Запомнить</span>
 				<div class="btn">
-					<input type="button" value="Log In" class="sign__btn">
+					<button type="submit" class="sign__btn">Log In</button>
 				</div>
 			</div>
 		</div>
@@ -124,6 +124,6 @@
 		</div>
 
 	</footer>
-	<script src="js/login.js"></script>
+	<script src="js/loginl.js"></script>
 </body>
 </html>

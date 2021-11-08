@@ -1528,6 +1528,7 @@ form {
 
 .tovar__item-var {
   display: flex;
+  height: 65px;
 }
 
 .var {
@@ -1796,6 +1797,10 @@ footer {
   padding: 6px 8px;
 }
 
+.sign__form._error {
+  box-shadow: 0 0 15px red;
+}
+
 .sign__btn {
   padding: 8px 10px;
   transition: color 0.3s;
@@ -1806,6 +1811,7 @@ footer {
   border: 2px outset #2980b9;
   border-radius: 3px;
   font-family: "Roboto", sans-serif;
+  width: 140%;
 }
 
 .sign__btn:hover {
