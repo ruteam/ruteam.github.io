@@ -32,6 +32,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .carousel {
   position: relative;
   width: 1074px;
@@ -662,6 +666,7 @@ form {
 .send__t::placeholder,
 .search__t::placeholder {
   color: #5196ff;
+  opacity: 1;
 }
 
 .search__icon {
@@ -1763,6 +1768,7 @@ footer {
   font-family: "Roboto Condensed", sans-serif;
   padding: 30px 40px 50px 40px;
   animation: moveCard 0.5s 1;
+  display: block;
 }
 
 .sign__item-form {
@@ -1816,10 +1822,6 @@ footer {
 
 .sign__btn:hover {
   background-color: #54a0ff;
-}
-
-.sign__btn:active {
-  animation: click 0.2s 1;
 }
 
 .fd {
