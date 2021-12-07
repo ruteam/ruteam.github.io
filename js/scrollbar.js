@@ -1,16 +1,15 @@
-document.querySelectorAll('a.yakor').forEach(link => {
-	link.addEventListener('click', function (e) {
-		e.preventDefault();
+const nav1 = document.querySelector('#nav__contacts');
 
-		const href = this.getattribute('href').substring(1);
+function scrollTo(element) {
+    window.scroll({
+        left: 0,
+        top: element.offsetTop,
+        behavior: 'smooth'
+    })
+}
 
-		const scrollTarget = document.getElementById(href);
 
-		const elementposition = scrollTarget.getBoundingClientRect().top;
-		const offsetposition = elementposition;
-		window.scrollBy({
-			top: offsetposition,
-			behavior: 'smooth'
-		});
-	});
-});
+
+nav1.addEventListener('click', () => {
+    scrollTo(document.querySelector('#contacts'));
+})

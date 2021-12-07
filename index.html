@@ -7,12 +7,11 @@
 	<title>LuckyFish</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="images/logo.svg">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 <body>
 	<header class="header">
 		<div class="header__container">
-			<div class="nav nav__animation">
+			<div class="nav">
 				<img src="images/fl2.jpg" class="header__logo">
 				<nav class="hamburger-menu">
 					<input id="menu__toggle" type="checkbox" />
@@ -21,16 +20,16 @@
         			</label>
 					<div class="menu__title">Меню</div>
 					<ul class="nav menu__box">
-						<li class="nav__name"><a class="menu__item opacity pick" href="index.html">Главная</a></li>
-						<li class="nav__name"><a class="menu__item opacity" href="catalog.html">Каталог</a></li>
+						<li class="nav__name"><a class="menu__item opacity pick" href="/index.html">Главная</a></li>
+						<li class="nav__name"><a class="menu__item opacity" href="/catalog.html">Каталог</a></li>
 						<li class="nav__name"><a class="menu__item opacity" href="#">О&nbspмагазине</a></li>
 						<li class="nav__name"><a class="menu__item opacity" href="#"> Доставка</a></li>
-						<li class="nav__name"><a class="menu__item opacity" href="#contacts">Контакты</a></li>
+						<li class="nav__name"><a id="nav__contacts" class="menu__item opacity" href="#">Контакты</a></li>
 					</ul>
 				</nav>
 				<div class="login">
 					<ul class="login">
-						<li class="login__nav"><a class="opacity" href="login.html">Вход</a></li>
+						<li class="login__nav"><a class="opacity" href="/login.html">Вход</a></li>
 						<li class="login__nav"><a class="opacity" href="#">Корзина</a></li>
 					</ul>
 					<div class="search">
@@ -65,7 +64,7 @@
 				<span class="shopes2 popular"><img src="images/rod-1.png"class="rod-1">Популярные категории<img src="images/rod-2.png"class="rod-2"></span>
 			</h2>
 			<div class="products__item-main products__item-bgimgspin">
-				<a href="spin.html">
+				<a href="/spin.html">
 					<div>
 						<div class="item__bgimgspin-main"></div>
 						<div class="item__text-catalog">
@@ -75,7 +74,7 @@
 				</a>
 			</div>
 			<div class="products__item-main products__item-bgimgfishrod">
-				<a href="fishrod.html">
+				<a href="/fishrod.html">
 					<div>
 						<div class="item__bgimgfishrod-main"></div>
 						<div class="item__text-catalog">
@@ -205,7 +204,7 @@
 				</a>
 			</div>
 			<div class="products__item-main products__item-bgimgbaits">
-				<a href="baits.html">
+				<a href="/baits.html">
 					<div>
 						<div class="item__bgimgbaits-main"></div>
 						<div class="item__text-catalog">
@@ -253,7 +252,7 @@
 		<div class="footer__main">
 
 			<div class="block-1">
-				<a href="catalog.html" class="block__a-1">КАТАЛОГ</a>
+				<a href="/catalog.html" class="block__a-1">КАТАЛОГ</a>
 				<a href="#" class="block__a-1">АКЦИИ</a>
 				<a href="#" class="block__a-1">БРЕНДЫ</a>
 			</div>
@@ -300,5 +299,6 @@
 			<img src="images/line.svg" class="l">
 		</div>
 	</footer>
+	<script src="js/scrollbar.js"></script>
 </body>
 </html>
