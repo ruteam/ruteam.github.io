@@ -1,0 +1,209 @@
+header {
+  background-color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: #1e233a;
+  transition: color 0.1s;
+}
+
+/** BODY **/
+
+.intro__item-btn input {
+  color: #fff;
+  background-color: #e74c3c;
+  transition: 0.1s linear;
+}
+
+.intro__item-btn input:hover {
+  background-color: #d93120;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #1e233a;
+}
+
+/****************** КАТАЛОГ *****************/
+
+.pick {
+  color: #213691;
+}
+
+.padding:hover,
+.opacity:hover {
+  color: #213691;
+}
+
+.kat__item {
+  background: #efefef;
+}
+
+/************** ИЗОБРАЖЕНИЯ ТОВАРОВ В КАТАЛОГЕ **************/
+
+.fishline_a,
+.fishrod_a,
+.spin_a,
+.coils_a,
+.bombards_a,
+.carbines_a,
+.scales_a,
+.sinkers_a,
+.tools_a,
+.feeders_a,
+.hooks_a,
+.clothes_a,
+.leashes_a,
+.subchecks_a,
+.floats_a,
+.bait_a,
+.baits_a,
+.cages_a,
+.chairs_a,
+.covers_a {
+  color: #213691;
+}
+
+.text {
+  background: #efefef;
+}
+
+.blackline {
+  background-color: #adadad;
+}
+
+/********* НАЗВАНИЕ, ПОИСК, ИЗОБРАЖЕНИЕ *******/
+
+.search__t,
+.send__t {
+  color: #5196ff;
+}
+
+.send__t::placeholder,
+.search__t::placeholder {
+  color: #5196ff;
+}
+
+.item__name:hover {
+  color: #4834d4;
+}
+
+.deshevo a {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.deshevo a:hover {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.count {
+  background-color: #ecf0f1;
+  color: #636e72;
+}
+
+.tovar-btn {
+  background-color: #d63031;
+  color: #fff;
+}
+
+.tovar-btn:hover {
+  color: #ecf0f1;
+}
+
+.var:hover {
+  box-shadow: 0 0 10px #c01f3c;
+}
+
+.active {
+  border: 2px solid #c01f3c;
+}
+
+.tovar__description-title a:hover {
+  color: #c01f3c;
+}
+
+.title__active {
+  color: #c01f3c;
+  border-bottom: 1px solid #c01f3c;
+}
+
+/** ПОДВАЛ **/
+
+footer {
+  background: #f4f4f4;
+  color: #b3b3b7;
+}
+
+.block-1 a,
+.block-2 a,
+.block-3 a {
+  color: #b3b3b7;
+}
+
+.block-1 a {
+  color: #5d5d5d;
+}
+
+.block-4 a {
+  color: #b3b3b3;
+}
+
+.block-1 p,
+.block-2 p,
+.block-3 p {
+  color: #5d5d5d;
+}
+
+.block__a-1 {
+  color: #5d5d5d !important;
+}
+
+.tel {
+  color: #5d5d5d !important;
+}
+
+/********************* РАССЫЛКА ************/
+
+.sendblock {
+  background: #ffffff;
+}
+
+.send__t::placeholder {
+  color: #b3b3b7;
+}
+
+/*************** ПРАВА *********************/
+
+.private__text {
+  color: #3a4153;
+}
+
+.nav__click {
+  color: rgb(0, 87, 109);
+}
+
+.sign__item-file__text {
+  color: #576574;
+}
+
+.sign__btn {
+  color: #fff;
+  background-color: #2e86de;
+}
+
+.sign__btn:hover {
+  background-color: #54a0ff;
+}
+
+.check {
+  color: #576574;
+}
+.change-theme[data-theme="dark"] {
+  display: block;
+}
+.change-theme[data-theme="light"] {
+  display: none;
+}
