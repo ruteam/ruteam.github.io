@@ -1,0 +1,30 @@
+[
+    {
+        "id": "26",
+        "name": "ELITE JIG NTWITCH 22 2.13",
+        "price": "3 319",
+        "img": "img/elitejign-1.jpeg",
+		"link": "elitejign-1.html"
+    },
+	{
+        "id": "27",
+        "name": "ELITE JIG NTWITCH 18 1.98",
+        "price": "3 120",
+        "img": "img/elitejign-1.jpeg",
+		"link": "elitejign-2.html"
+    },
+	{
+        "id": "28",
+        "name": "ELITE JIG NTWITCH 15 1.83",
+        "price": "2 907",
+        "img": "img/elitejign-1.jpeg",
+		"link": "elitejign-3.html"
+    },
+	{
+        "id": "29",
+        "name": "ELITE JIG NTWITCH 28 2.23",
+        "price": "3 727",
+        "img": "img/elitejign-1.jpeg",
+		"link": "elitejign-4.html"
+    }
+]

@@ -7,8 +7,10 @@
 	<title>LuckyFish - Спиннинги LuckyJohn</title>
 	<link rel="stylesheet" href="../../../../../css/style.css">
 	<link rel="shortcut icon" href="../../../../../images/logo.svg">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
-<body>
+<body data-page="catalog" data-pages="progressmj7" id="govno">
 	<header class="header">
 		<div class="header__container">
 			<div class="nav">
@@ -30,7 +32,7 @@
 				<div class="login">
 					<ul class="login">
 						<li class="login__nav"><a class="opacity" href="../../../../../login.html">Вход</a></li>
-						<li class="login__nav"><a class="opacity" href="#">Корзина</a></li>
+						<li class="login__nav"><a class="opacity" href="../../../../../cart.html">Корзина</a></li>
 					</ul>
 					<div class="search">
 						<div class="searchblock">
@@ -151,56 +153,35 @@
 					<h2 class="name">Всё&nbspдля&nbspудачной&nbspрыбалки!</h2>
 				</div>
 			</div>
-			<div class="carousel">
-				<input type="button" class="arrow prev" value="<">
-				<div class="gallery">
-					<ul class="images">
-						<li class="li__gal"><img src="../../../../../images/adv-1.jpg"></li>
-						<li class="li__gal"><img src="../../../../../images/adv-2.jpg"></li>
-						<li class="li__gal"><img src="../../../../../images/adv-3.jpg"></li>
-					</ul>
+			<div class="swipers">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="#"><img class="slide-img" src="../../../../../images/adv-1.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img class="slide-img" src="../../../../../images/adv-2.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img class="slide-img" src="../../../../../images/adv-3.jpg"></a></div>
 				</div>
-				<input type="button" class="arrow next" value=">">
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 			<h2 class="shopes"><span class="kat__head2">КАТАЛОГ</span><img src="../../../../../images/strelka.svg" class="strelka"><span class="shopes2 shopes2-animation">Спиннинги Lucky John</span></h2>
-			<div class="move__animation">
-
-				<div class="products__item products__item-spin">
-					<a href="progressmj-1.html">
-						<div class="item item-spin">
-							<img src="img/img-main/progressmj-1.jpg" class="item__photo">
-							<div class="item__text">
-								<p class="item__name item__name-spin">Progress Micro Jig 7 2.32</p>
-								<p class="price">3 611.00 ₽</p>
-							</div>
+			<div id="goods">
+				<img src="../../../../../images/loading.gif" alt="Загрузка" />
+			</div>
+			<script id="catalog-template" type="text/template">
+				<% _.each(goods, function(good) { %>
+						<div class="products__item products__item-spin">
+							<a href="<%= good.link %>">
+								<div class="item item-spin">
+									<img class="item__photo" src="<%- good.img %>" />
+									<div class="item__text">
+										<p class="item__name item__name-spin"><%- good.name %></p>
+										<p class="price"><%= good.price %> ₽</p>
+									</div>
+								</div>
+							</a>
 						</div>
-					</a>
-				</div>
-
-				<div class="products__item products__item-spin">
-					<a href="progressmj-2.html">
-						<div class="item item-spin">
-							<img src="img/img-main/progressmj-2.jpg" class="item__photo">
-							<div class="item__text">
-								<p class="item__name item__name-spin">Progress Micro Jig 7 2.12</p>
-								<p class="price">3 611.00 ₽</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="products__item products__item-spin">
-					<a href="progressmj-3.html">
-						<div class="item item-spin">
-							<img src="img/img-main/progressmj-3.jpg" class="item__photo">
-							<div class="item__text">
-								<p class="item__name item__name-spin">Progress Micro Jig 7 1.98</p>
-								<p class="price">3 611.00 ₽</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
+				<% }); %>
+			</script>
 			</div>
 		</div>
 
@@ -259,6 +240,10 @@
 		</div>
 
 	</footer>
+	<script src="../../../../../js/jquery.min.js"></script>
+	<script src="../../../../../js/underscore.min.js"></script>
+	<script src="../../../../../js/catalog.js"></script>
+	<script src="../../../../../js/main.js"></script>
 	<script src="../../../../../js/carousel.js"></script>
 	<script src="../../../../../js/scrollbar.js"></script>
 	<script src="../../../../../js/push.js"></script>

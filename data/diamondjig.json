@@ -1,0 +1,86 @@
+[
+    {
+        "id": "8",
+        "name": "MICROJIG 10 2.10",
+        "price": "3 030",
+        "img": "img/1.jpeg",
+		"link": "dj-1.html"
+    },
+	{
+        "id": "9",
+        "name": "MICRO 10 1.98",
+        "price": "2 848",
+        "img": "img/1.jpeg",
+		"link": "dj-2.html"
+    },
+	{
+        "id": "10",
+        "name": "JIG 32 2.70",
+        "price": "3 854",
+        "img": "img/2.jpeg",
+		"link": "dj-3.html"
+    },
+	{
+        "id": "11",
+        "name": "JIG 32 2.48",
+        "price": "3 565",
+        "img": "img/2.jpeg",
+		"link": "dj-4.html"
+    },
+	{
+        "id": "12",
+        "name": "JIG 32 2.28",
+        "price": "3 411",
+        "img": "img/2.jpeg",
+		"link": "dj-5.html"
+    },
+	{
+        "id": "13",
+        "name": "JIG 32 2.10",
+        "price": "3 280",
+		"img": "img/2.jpeg",
+		"link": "dj-6.html"
+    },
+	{
+        "id": "14",
+        "name": "JIG 24 2.48",
+        "price": "3 435",
+		"img": "img/2.jpeg",
+		"link": "dj-7.html"
+    },
+	{
+        "id": "15",
+        "name": "JIG 24 2.28",
+        "price": "3 280",
+		"img": "img/2.jpeg",
+		"link": "dj-8.html"
+    },
+	{
+        "id": "16",
+        "name": "JIG 24 2.10",
+        "price": "3 148",
+        "img": "img/2.jpeg",
+		"link": "dj-9.html"
+    },
+	{
+        "id": "17",
+        "name": "JIG 14 2.40",
+        "price": "3 305",
+		"img": "img/2.jpeg",
+		"link": "dj-10.html"
+    },
+	{
+        "id": "18",
+        "name": "JIG 14 2.10",
+        "price": "3 018",
+		"img": "img/2.jpeg",
+		"link": "dj-11.html"
+    },
+	{
+        "id": "19",
+        "name": "JIG 14 1.98",
+        "price": "2 838",
+		"img": "img/1.jpeg",
+		"link": "dj-12.html"
+    }
+]

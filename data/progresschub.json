@@ -1,0 +1,16 @@
+[
+    {
+        "id": "63",
+        "name": "Progress Chub 10 2.74",
+        "price": "3 765",
+        "img": "img/img-main/progresschub-1.jpg",
+		"link": "progresschub-1.html"
+    },
+	{
+        "id": "64",
+        "name": "Progress Chub 10 2.44",
+        "price": "3 597",
+        "img": "img/img-main/progresschub-2.jpg",
+		"link": "progresschub-2.html"
+    }
+]

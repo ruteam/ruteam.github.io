@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-@keyframes moveCard {
+/*@keyframes moveCard {
   0% {
     margin-top: 100vh;
   }
@@ -30,7 +30,7 @@
   100% {
     transform: scale(1);
   }
-}
+}*/
 
 .images {
   position: relative;
@@ -52,52 +52,84 @@
 
 .arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
+  opacity: 0.7;
   padding: 2px;
-  font-size: 18px;
+  font-size: 22px;
   color: gray;
   display: block;
-  opacity: 1;
-  background: none;
   border: none;
   cursor: pointer;
+  background-color: #fff;
+  border-radius: 21px;
+  padding: 10px 15px;
 }
 
 .arrow:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .prev {
-  left: 20px;
+  left: -20px;
   z-index: 1;
 }
 
 .next {
-  right: 20px;
+  right: -20px;
 }
 
-.gallery {
+.swipers {
   width: 1074px;
-  overflow: hidden;
-}
-
-.gallery ul {
-  height: 369px;
-  width: 9999px;
+  height: 366px;
   margin: 0;
-  padding: 0;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   list-style: none;
-  font-size: 0;
+  padding: 0;
 }
 
-.gallery li {
-  display: inline-block;
+.slide-img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  opacity: 0.3;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 0.6 !important;
+}
+
+.sliders {
+  width: 400px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.product__slide-img {
+  width: 100%;
+  height: 100%;
 }
 
 /** ШАПКА **/
 
 header {
   background-color: #f4f4f4;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .header__container {
@@ -192,6 +224,7 @@ a {
 .intro {
   width: 100%;
   height: 575px;
+  margin-top: 2.8%;
 }
 
 .intro__items {
@@ -294,6 +327,7 @@ body {
 .container {
   display: block;
   padding-right: 20px;
+  margin-top: 2.8%;
 }
 
 .kat__head {
@@ -720,6 +754,10 @@ form {
 
 /***************** ТОВАРЫ *****************/
 
+.products {
+  margin-top: 2.8%;
+}
+
 .products__container {
   padding: 10px 310px 0 310px;
 }
@@ -900,7 +938,6 @@ form {
   background-position: 20px 10px;
   width: 245px;
   height: 201px;
-  animation: moveCard 0.6s 1;
 }
 
 .item__bgimgcarbines,
@@ -1146,7 +1183,6 @@ form {
   background-position: 20px 10px;
   width: 241px;
   height: 195px;
-  animation: moveCard 0.6s 1;
 }
 
 .item__bgimgscales-main,
@@ -1442,8 +1478,7 @@ form {
 .tovar__item {
   display: flex;
   margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 100px;
+  margin-bottom: 20px;
 }
 
 .tovar__item-img {
@@ -1507,15 +1542,15 @@ form {
   display: flex;
   align-items: center;
   margin-top: 30px;
-  padding: 10px;
+  padding: 1px 7px 1px 7px;
   background-color: #ecf0f1;
-  width: 120px;
+  width: 131px;
   font-size: 18px;
   color: #636e72;
 }
 
 .count p {
-  margin: 0 41px;
+  margin: 0 35px;
 }
 
 .min {
@@ -1523,11 +1558,13 @@ form {
   cursor: pointer;
   width: 12px;
   height: 2px;
+  padding: 12px 0 12px 12px;
 }
 
 .plus {
   cursor: pointer;
   width: 12px;
+  padding: 12px 0 12px 12px;
 }
 
 .tovar-btn {
@@ -1556,7 +1593,7 @@ form {
   animation: buy 0.7s 1;
 }
 
-.tovar__item-var {
+/* .tovar__item-var {
   display: flex;
   height: 65px;
 }
@@ -1571,8 +1608,32 @@ form {
 .var:hover {
   box-shadow: 0 0 10px #c01f3c;
 }
+*/
 
-.active {
+.subslides {
+  width: 338px;
+  height: 70px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  list-style: none;
+  padding: 12px 0 0 12px;
+}
+
+.product__subslide-img {
+  cursor: pointer;
+  width: 65px;
+  padding: 3px;
+  margin-right: 16px;
+  transition: all 0.1s ease;
+}
+
+.product__subslide-img:hover {
+  box-shadow: 0 0 10px #c01f3c;
+}
+
+.swiper-slide-thumb-active .product__subslide-img {
   border: 2px solid #c01f3c;
 }
 
@@ -1582,13 +1643,14 @@ form {
 }
 
 .tovar__description {
-  margin-top: 50px;
+  margin-top: 10px;
   padding-right: 50px;
 }
 
 .tovar__description-title a {
   margin-left: 15px;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .tovar__description-title a:hover {
@@ -1693,6 +1755,242 @@ footer {
   color: #5d5d5d !important;
 }
 
+.title-checkout {
+  font-style: 36px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.checkout__title {
+  margin: 0 0 15px 0;
+}
+
+.order-checkout__title {
+  margin: 0 0 15px 0;
+}
+
+.order-checkout__item {
+  margin: 0 0 10px 0;
+}
+
+.order-checkout__item:last-child {
+  margin: 0 0 0 0;
+}
+
+.order-checkout__footer {
+  padding: 25px 0 0 0;
+  text-align: right;
+}
+
+.order-checkout__total {
+  margin: 0 0 15px 0;
+  font-weight: 900;
+  color: #333333;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.order-checkout__total span {
+  color: #f68038;
+  font-size: 36px;
+  padding-left: 5px;
+}
+
+.order-checkout__btn {
+  display: inline-flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 33px;
+  color: #fff;
+  padding: 0 15px;
+  background-color: #f68038;
+}
+
+.item-order {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.item-order__content {
+  align-items: center;
+  display: flex;
+}
+
+.item-order__image {
+  flex: 0 0 110px;
+}
+
+.item-order__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 50px;
+}
+
+.item-order__title {
+  color: #36949f;
+  font-size: 20px;
+  line-height: 16px;
+  display: inline-block;
+  margin: 0 0 10px 0;
+}
+
+.item-order__title span {
+  font-weight: 900;
+}
+
+.item-order__img img {
+  width: 220px;
+}
+
+.item-order__quantity {
+  padding: 0 50px;
+  flex: 1 1 auto;
+}
+
+.item-order__label {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+}
+
+.item-order__price {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.item-order__total {
+  flex: 1 1 auto;
+  padding-right: 40px;
+}
+
+.cart-js {
+  display: none;
+}
+
+.js-cart-item-quantity12 {
+  margin-top: 20px;
+}
+
+.js-cart-item {
+  padding-bottom: 10px;
+}
+
+/********************* СЧЕТЧИК ТОВАРА **************/
+
+.quantity-product {
+  padding-top: 25px;
+}
+
+.number {
+  user-select: none;
+  position: relative;
+  text-align: left;
+  padding: 0;
+  width: 140px;
+  border: none;
+  display: inline-block;
+}
+.number-minus,
+.number-plus {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  background: #faf4f2;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  font-family: arial;
+  color: #3e1e02;
+  text-decoration: none;
+}
+.number-minus {
+  left: 0;
+  background: none;
+}
+.number-plus {
+  right: 0;
+  background: none;
+}
+.number-minus:hover,
+.number-plus:hover {
+  color: #f68038;
+}
+
+.number-text,
+.number-text12 {
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  line-height: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0 0 0 42px;
+  background: #fff;
+  outline: none;
+  border: none;
+  width: 57px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/********************* ЗАКРЫТЬ **************/
+
+.cl-btn-2 div {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 30px;
+  width: 20px;
+}
+.cl-btn-2 .leftright {
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  margin-top: 11px;
+  background-color: #dedede;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+.cl-btn-2 .rightleft {
+  height: 3px;
+  width: 20px;
+  position: absolute;
+  margin-top: 11px;
+  background-color: #dedede;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+.cl-btn-2 .close-btn {
+  margin: 54px 0 0 -5px;
+  position: absolute;
+  color: #dedede;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.cl-btn-2 div:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #f68038;
+}
+.cl-btn-2 div:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #f68038;
+}
+
 /********************* РАССЫЛКА ************/
 
 .sendblock {
@@ -1783,8 +2081,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 0 340px 80px 300px;
-  margin-top: 130px;
+  padding: 130px 340px 80px 300px;
 }
 
 .sign {
@@ -1792,7 +2089,6 @@ footer {
   background-color: #fff;
   font-family: "Roboto Condensed", sans-serif;
   padding: 30px 40px 50px 40px;
-  animation: moveCard 0.5s 1;
   display: block;
 }
 

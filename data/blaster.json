@@ -1,0 +1,16 @@
+[
+    {
+        "id": "6",
+        "name": "TRAVEL SPIN 30 2.10",
+        "price": "608",
+        "img": "img/1.jpeg",
+		"link": "bts-1.html"
+    },
+    {
+        "id": "7",
+        "name": "TRAVEL SPIN 30 1.80",
+        "price": "531",
+        "img": "img/2.jpeg",
+		"link": "bts-2.html"
+    }
+]

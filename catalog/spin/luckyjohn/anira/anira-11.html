@@ -7,6 +7,8 @@
 	<title>LuckyFish - Спинниг LuckyJohn Anira MicroJig 5 7.1</title>
 	<link rel="stylesheet" href="../../../../css/style.css">
 	<link rel="shortcut icon" href="../../../../images/logo.svg">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -30,7 +32,7 @@
 				<div class="login">
 					<ul class="login">
 						<li class="login__nav"><a class="opacity" href="../../../../login.html">Вход</a></li>
-						<li class="login__nav"><a class="opacity" href="#">Корзина</a></li>
+						<li class="login__nav"><a class="opacity" href="../../../../cart.html">Корзина</a></li>
 					</ul>
 					<div class="search">
 						<div class="searchblock">
@@ -155,7 +157,15 @@
 			<div class="move__animation">
 				<div class="tovar">
 					<div class="tovar__item">
-						<img src="img/anira-4.0.jpg" class="tovar__item-img activeimg">
+						<div class="sliders">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/anira-4.0.jpg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/anira-4.1.jpg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/anira-4.2.jpg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/anira-4.3.jpg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/anira-4.4.jpg"></a></div>
+							</div>
+						</div>
 						<div class="tovar__item-text">
 							<div class="rating">
 								<img src="../../../../images/star.png">
@@ -171,19 +181,21 @@
 								<a href="#">Нашли дешевле?</a>
 							</div>
 							<div class="count">
-								<img src="../../../../images/min.png" class="min" id="buttonCountMinus">
-								<p class="count__item" id="buttonCountNumber"></p>
-								<img src="../../../../images/plus.png" class="plus" id="buttonCountPlus">
+								<div class=""><img src="../../../../images/min.png" class="min" id="buttonCountMinus"></div>
+								<div class=""><p class="count__item" id="buttonCountNumber"></p></div>
+								<div class=""><img src="../../../../images/plus.png" class="plus" id="buttonCountPlus"></div>
 							</div>
 							<input class="tovar-btn" type="button" value="Купить">
 						</div>
 					</div>
-					<div class="tovar__item-var">
-						<img src="img/anira-4.0.jpg" class="var active">
-						<img src="img/anira-4.1.jpg" class="var notactive">
-						<img src="img/anira-4.2.jpg" class="var notactive">
-						<img src="img/anira-4.3.jpg" class="var notactive">
-						<img src="img/anira-4.4.jpg" class="var notactive">
+					<div class="subslides">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/anira-4.0.jpg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/anira-4.1.jpg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/anira-4.2.jpg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/anira-4.3.jpg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/anira-4.4.jpg"></a></div>
+						</div>
 					</div>
 					<div class="tovar__description">
 						<div class="tovar__description-title">
@@ -285,6 +297,9 @@
 	</footer>
 	<script src="../../../../js/script.js"></script>
 	<script src="../../../../js/scrollbar.js"></script>
+	<script src="../../../../js/push.js"></script>
+	<script src="../../../../js/carousel.js"></script>
+	<script src="../../../../js/switcher.js"></script>
 </body>
 </html>
 

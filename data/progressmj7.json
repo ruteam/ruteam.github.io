@@ -1,0 +1,23 @@
+[
+    {
+        "id": "78",
+        "name": "Progress MicroJig 7 2.32",
+        "price": "3 611",
+        "img": "img/img-main/progressmj-1.jpg",
+		"link": "progressmj-1.html"
+    },
+	{
+        "id": "79",
+        "name": "Progress MicroJig 7 2.12",
+        "price": "3 611",
+        "img": "img/img-main/progressmj-2.jpg",
+		"link": "progressmj-2.html"
+    },
+	{
+        "id": "80",
+        "name": "Progress MicroJig 7 1.98",
+        "price": "3 611",
+        "img": "img/img-main/progressmj-3.jpg",
+		"link": "progressmj-3.html"
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "id": "36",
+        "name": "Anira 24 2.16",
+        "price": "7 275",
+        "img": "img/img-main/anira-1.jpg",
+		"link": "https://www.youtube.com/"
+    },
+    {
+        "id": "37",
+        "name": "Anira 14 2.16",
+        "price": "7 195",
+        "img": "img/img-main/anira-2.jpg",
+		"link": "https://www.google.com/"
+    },
+    {
+        "id": "38",
+        "name": "Anira Seatrout 25 2.90",
+        "price": "7 428",
+        "img": "img/img-main/anira-3.jpg",
+		"link": "https://www.google.com/"
+    },
+    {
+        "id": "39",
+        "name": "Anira 14 2.29",
+        "price": "7 343",
+        "img": "img/img-main/anira-4.jpg",
+		"link": "https://www.google.com/"
+    },
+    {
+        "id": "40",
+        "name": "Anira 24 2.29",
+        "price": "7 408",
+        "img": "img/img-main/anira-5.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "41",
+        "name": "Anira 24 2.44",
+        "price": "7 492",
+        "img": "img/img-main/anira-6.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "42",
+        "name": "Anira 34 2.44",
+        "price": "7 582",
+        "img": "img/img-main/anira-7.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "43",
+        "name": "Anira 34 2.49",
+        "price": "7 634",
+        "img": "img/img-main/anira-8.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "44",
+        "name": "Anira 45 2.49",
+        "price": "8 106",
+        "img": "img/img-main/anira-9.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "45",
+        "name": "Anira MicroJig 5 6.6",
+        "price": "6 263",
+        "img": "img/img-main/anira-10.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "46",
+        "name": "Anira MicroJig 5 7.1",
+        "price": "6 756",
+        "img": "img/img-main/anira-11.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "47",
+        "name": "Anira MicroJig 5 7.5",
+        "price": "7 082",
+        "img": "img/img-main/anira-12.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "48",
+        "name": "Anira Stream 10 2.40",
+        "price": "5 750",
+        "img": "img/img-main/anira-13.jpg",
+		"link": "https://www.google.com/"
+    },
+	{
+        "id": "49",
+        "name": "Anira Stream 10 2.70",
+        "price": "6 051",
+        "img": "img/img-main/anira-14.jpg",
+		"link": "https://www.google.com/"
+    }
+
+]

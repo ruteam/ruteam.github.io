@@ -1,0 +1,72 @@
+[
+    {
+        "id": "68",
+        "name": "Progress Jig V2 37 2.74",
+        "price": "4 854",
+        "img": "img/img-main/progressjigv-1.jpg",
+		"link": "progressjigv-1.html"
+    },
+	{
+        "id": "69",
+        "name": "Progress Jig V2 37 2.49",
+        "price": "4 438",
+        "img": "img/img-main/progressjigv-2.jpg",
+		"link": "progressjigv-2.html"
+    },
+	{
+        "id": "70",
+        "name": "Progress Jig V2 37 2.34",
+        "price": "4 271",
+        "img": "img/img-main/progressjigv-3.jpg",
+		"link": "progressjigv-3.html"
+    },
+	{
+        "id": "71",
+        "name": "Progress Jig V2 27 2.74",
+        "price": "4 603",
+        "img": "img/img-main/progressjigv-4.jpg",
+		"link": "progressjigv-4.html"
+    },
+	{
+        "id": "72",
+        "name": "Progress Jig V2 27 2.49",
+        "price": "4 271",
+        "img": "img/img-main/progressjigv-5.jpg",
+		"link": "progressjigv-5.html"
+    },
+	{
+        "id": "73",
+        "name": "Progress Jig V2 27 2.34",
+        "price": "4 104",
+        "img": "img/img-main/progressjigv-6.jpg",
+		"link": "progressjigv-6.html"
+    },
+	{
+        "id": "74",
+        "name": "Progress Jig V2 27 2.11",
+        "price": "3 884",
+        "img": "img/img-main/progressjigv-7.jpg",
+		"link": "progressjigv-7.html"
+    },
+	{
+        "id": "75",
+        "name": "Progress Jig V2 17 2.49",
+        "price": "4 159",
+        "img": "img/img-main/progressjigv-8.jpg",
+		"link": "progressjigv-8.html"
+    },
+	{
+        "id": "76",
+        "name": "Progress Jig V2 17 2.34",
+        "price": "4 019",
+        "img": "img/img-main/progressjigv-9.jpg",
+		"link": "progressjigv-9.html"
+    },
+	{
+        "id": "77",
+        "name": "Progress Jig V2 17 2.11",
+        "price": "3 799",
+        "img": "img/img-main/progressjigv-10.jpg",
+		"link": "progressjigv-10.html"
+    }
+]

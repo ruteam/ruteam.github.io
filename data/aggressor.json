@@ -1,0 +1,37 @@
+[
+    {
+        "id": "1",
+        "name": "Aggressor 45 2.65",
+        "price": "3 611",
+        "img": "img/agressor-1.jpeg",
+		"link": "agressor-1.html"
+    },
+    {
+        "id": "2",
+        "name": "Aggressor 35 2.65",
+        "price": "3 370",
+        "img": "img/agressor-2.jpg",
+		"link": "agressor-2.html"
+    },
+    {
+        "id": "3",
+        "name": "Aggressor 35 2.40",
+        "price": "3 130",
+        "img": "img/agressor-3.jpg",
+		"link": "agressor-3.html"
+    },
+    {
+        "id": "4",
+        "name": "Aggressor 25 2.40",
+        "price": "3 130",
+        "img": "img/agressor-4.jpg",
+		"link": "agressor-4.html"
+    },
+    {
+        "id": "5",
+        "name": "Aggressor 25 2.10",
+        "price": "3 370",
+        "img": "img/agressor-4.jpg",
+		"link": "agressor-5.html"
+    }
+]

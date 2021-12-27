@@ -7,6 +7,8 @@
 	<title>LuckyFish - Спинниг SALMO AGGRESSOR 25 2.40</title>
 	<link rel="stylesheet" href="../../../../css/style.css">
 	<link rel="shortcut icon" href="../../../../images/logo.svg">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -30,7 +32,7 @@
 				<div class="login">
 					<ul class="login">
 						<li class="login__nav"><a class="opacity" href="../../../../login.html">Вход</a></li>
-						<li class="login__nav"><a class="opacity" href="#">Корзина</a></li>
+						<li class="login__nav"><a class="opacity" href="../../../../cart.html">Корзина</a></li>
 					</ul>
 					<div class="search">
 						<div class="searchblock">
@@ -155,7 +157,14 @@
 			<div class="move__animation">
 				<div class="tovar">
 					<div class="tovar__item">
-						<img src="img/agressor-1.0.jpeg" class="tovar__item-img">
+						<div class="sliders">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/agressor-1.0.jpeg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/agressor-1.1.jpeg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/agressor-1.2.jpeg"></a></div>
+								<div class="swiper-slide"><a href="#"><img class="product__slide-img" src="img/agressor-1.3.jpeg"></a></div>
+							</div>
+						</div>
 						<div class="tovar__item-text">
 							<div class="rating">
 								<img src="../../../../images/star.png">
@@ -172,18 +181,20 @@
 								<a href="#">Нашли дешевле?</a>
 							</div>
 							<div class="count">
-								<img src="../../../../images/min.png" class="min" id="buttonCountMinus">
-								<p class="count__item" id="buttonCountNumber"></p>
-								<img src="../../../../images/plus.png" class="plus" id="buttonCountPlus">
+								<div class=""><img src="../../../../images/min.png" class="min" id="buttonCountMinus"></div>
+								<div class=""><p class="count__item" id="buttonCountNumber"></p></div>
+								<div class=""><img src="../../../../images/plus.png" class="plus" id="buttonCountPlus"></div>
 							</div>
 							<input class="tovar-btn" type="button" value="Купить">
 						</div>
 					</div>
-					<div class="tovar__item-var">
-						<img src="img/agressor-1.0.jpeg" class="var active">
-						<img src="img/agressor-1.1.jpeg" class="var">
-						<img src="img/agressor-1.2.jpeg" class="var">
-						<img src="img/agressor-1.3.jpeg" class="var">
+					<div class="subslides">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/agressor-1.0.jpeg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/agressor-1.1.jpeg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/agressor-1.2.jpeg"></a></div>
+							<div class="swiper-slide"><a href="#"><img class="product__subslide-img" src="img/agressor-1.3.jpeg"></a></div>
+						</div>
 					</div>
 					<div class="tovar__description">
 						<div class="tovar__description-title">
@@ -288,5 +299,7 @@
 	<script src="../../../../js/script.js"></script>
 	<script src="../../../../js/scrollbar.js"></script>
 	<script src="../../../../js/push.js"></script>
+	<script src="../../../../js/carousel.js"></script>
+	<script src="../../../../js/switcher.js"></script>
 </body>
 </html>

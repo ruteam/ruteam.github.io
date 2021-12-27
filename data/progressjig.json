@@ -1,0 +1,23 @@
+[
+    {
+        "id": "65",
+        "name": "Progress Jig 37 2.74",
+        "price": "4 898",
+        "img": "img/img-main/progressjig-1.jpg",
+		"link": "progressjig-1.html"
+    },
+	{
+        "id": "66",
+        "name": "Progress Jig 37 2.48",
+        "price": "4 632",
+        "img": "img/img-main/progressjig-2.jpg",
+		"link": "progressjig-2.html"
+    },
+	{
+        "id": "67",
+        "name": "Progress Jig 17 2.48",
+        "price": "4 257",
+        "img": "img/img-main/progressjig-3.jpg",
+		"link": "progressjig-3.html"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "id": "50",
+        "name": "Basara 10 2.28",
+        "price": "9 237",
+        "img": "img/img-main/anira-1.jpg",
+		"link": "https://www.youtube.com/"
+    },
+    {
+        "id": "51",
+        "name": "Basara 10 2.15",
+        "price": "8 917",
+        "img": "img/img-main/basara-1.jpg",
+		"link": "https://www.google.com/"
+    }
+
+]

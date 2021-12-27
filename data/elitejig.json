@@ -1,0 +1,44 @@
+[
+    {
+        "id": "20",
+        "name": "ELITE JIG S 27 2.74",
+        "price": "4 527",
+        "img": "img/elitejig-1.jpeg",
+		"link": "elitejig-1.html"
+    },
+	{
+        "id": "21",
+        "name": "ELITE JIG S 27 2.54",
+        "price": "4 400",
+        "img": "img/elitejig-1.jpeg",
+		"link": "elitejig-2.html"
+    },
+	{
+        "id": "22",
+        "name": "ELITE JIG S 27 2.34",
+        "price": "4 251",
+        "img": "img/elitejig-1.jpeg",
+		"link": "elitejig-3.html"
+    },
+	{
+        "id": "23",
+        "name": "ELITE JIG S 17 2.44",
+        "price": "4 088",
+        "img": "img/elitejig-1.jpeg",
+		"link": "elitejig-4.html"
+    },
+	{
+        "id": "24",
+        "name": "ELITE JIG S 17 2.34",
+        "price": "3 893",
+        "img": "img/elitejig-1.jpeg",
+		"link": "elitejig-5.html"
+    },
+	{
+        "id": "25",
+        "name": "ELITE JIG S 17 2.16",
+        "price": "3 753",
+        "img": "img/elitejig-1.jpeg",
+		"link": "elitejig-6.html"
+    }
+]
