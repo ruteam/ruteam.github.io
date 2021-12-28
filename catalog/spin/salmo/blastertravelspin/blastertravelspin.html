@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
-<body data-page="blacksense">
+<body id="pages" data-page="catalog" data-pages="blaster">
 	<header class="header">
 		<div class="header__container">
 			<div class="nav">
@@ -31,8 +31,15 @@
 				</nav>
 				<div class="login">
 					<ul class="login">
-						<li class="login__nav"><a class="opacity" href="../../../../login.html">Вход</a></li>
-						<li class="login__nav"><a class="opacity" href="../../../../cart.html">Корзина</a></li>
+						<li class="login__nav"><a class="opacity svg-login" href="../../../../login.html"><svg  class="login-svg" enable-background="new 0 0 50 50" height="35px" id="Layer_1" version="1.1" viewBox="0 0 30 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle cx="25" cy="25" r="24" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/><path d="M29.933,35.528  c-0.146-1.612-0.09-2.737-0.09-4.21c0.73-0.383,2.038-2.825,2.259-4.888c0.574-0.047,1.479-0.607,1.744-2.818  c0.143-1.187-0.425-1.855-0.771-2.065c0.934-2.809,2.874-11.499-3.588-12.397c-0.665-1.168-2.368-1.759-4.581-1.759  c-8.854,0.163-9.922,6.686-7.981,14.156c-0.345,0.21-0.913,0.878-0.771,2.065c0.266,2.211,1.17,2.771,1.744,2.818  c0.22,2.062,1.58,4.505,2.312,4.888c0,1.473,0.055,2.598-0.091,4.21c-1.261,3.39-7.737,3.655-11.473,6.924  c3.906,3.933,10.236,6.746,16.916,6.746s14.532-5.274,15.839-6.713C37.688,39.186,31.197,38.93,29.933,35.528z" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.5"/></svg></a></li>
+						<li class="login__nav">
+							<a class="opacity" href="../../../../cart.html">
+								<div class="cart-btn">
+									<span class="cart-btn__counter js-cart-total-count-items">0</span>
+									<svg class="svg-basket" width="32.402" height="32" viewBox="0 0 32.402 32"><path d="M6 30a2 2 1080 1 0 4 0 2 2 1080 1 0-4 0zm18 0a2 2 1080 1 0 4 0 2 2 1080 1 0-4 0zM-.058 5a1 1 0 0 0 1 1H3.02l1.242 5.312L6 20c0 .072.034.134.042.204l-1.018 4.58A.997.997 0 0 0 6 26h22.688a1 1 0 0 0 0-2H7.248l.458-2.06c.1.016.19.06.294.06h18.23c1.104 0 1.77-.218 2.302-1.5l3.248-9.964C32.344 8.75 31.106 8 30 8H6c-.156 0-.292.054-.438.088l-.776-3.316A1 1 0 0 0 3.812 4H.942a1 1 0 0 0-1 1zm6.098 5h23.81l-3.192 9.798c-.038.086-.07.148-.094.19-.066.006-.17.012-.334.012H8v-.198l-.038-.194L6.04 10z"/></svg>
+								</div>
+							</a>
+						</li>
 					</ul>
 					<div class="search">
 						<div class="searchblock">
@@ -184,54 +191,43 @@
 				</script>
 			</div>
 		</div>
-
+		<div class="js-cart cart-js"></div>
 	</main>
 
 	<footer>
 
 		<div class="footer__main">
 
-			<img src="../../../../images/fl.png" class="footer__logo">
-
-			<div class="send">
-				<div class="sendblock">
-					<input type="text" class="send__t" placeholder="Рассылка">
-					<img src="../../../../images/Send Icon.png" class="sendicon">
-				</div>
+			<div class="block-1">
+				<a href="../../../../catalog.html" class="block__a-1">КАТАЛОГ</a>
+				<a href="#" class="block__a-1">АКЦИИ</a>
+				<a href="#" class="block__a-1">БРЕНДЫ</a>
 			</div>
 
-			<div class="contacts" id="contacts">
+			<div class="block-2">
+				<a href="#" class="block__a-1">КОМПАНИЯ</a>
+				<a href="#" class="small">О компании</a>
+				<a href="#" class="small">Контакты</a>
+			</div>
 
-				<div class="contacts__item">
+			<div class="block-3">
+				<a href="#" class="block__a-1">ИНФОРМАЦИЯ</a>
+				<a  href="#" class="small">Реквизиты</a>
+				<a  href="#" class="small">Оплата</a>
+			</div>
 
-					<h2 class="contacts__name">КОНТАКТЫ</h2>
-
-					<div class="contacts__icon">
-						<img src="../../../../images/contacts/phone.svg" class="contacts__icon1">
-						<p class="contacts__text">+78005003535</p>
-					</div>
-
-					<div class="contacts__icon">
-						<img src="../../../../images/contacts/whatsapp.svg" class="contacts__icon1">
-						<p class="contacts__text">Whatsapp</p>
-					</div>
-
-					<div class="contacts__icon">
-						<img src="../../../../images/contacts/mail.svg" class="contacts__icon2">
-						<p class="contacts__text">luckyfishing@gmail.com</p>
-					</div>
-
-					<div class="contacts__icon">
-						<img src="../../../../images/contacts/time.svg" class="contacts__icon2">
-						<p class="contacts__text">Work time 08:00 - 18:00</p>
-					</div>
-
-				</div>
-
+			<div class="block-4" id="contacts">
+				<a href="tel:88005003535" class="tel">8 800 500-35-35</a>
+				<a href="mailto:luckyfishing@gmail.com">luckyfishing@gmail.com</a>
 			</div>
 
 		</div>
-
+		<div class="send">
+			<div class="sendblock">
+				<input type="text" class="send__t" placeholder="Ваш e-mail">
+				<img src="../../../../images/186386_paper plane_plane_send_icon.png" class="sendicon">
+			</div>
+		</div>
 		<div class="social__block">
 
 			<div class="social">
@@ -247,7 +243,7 @@
 		</div>
 
 		<div class="footer__line">
-			<img src="images/line.svg" class="l">
+			<img src="../../../../images/line.svg" class="l">
 		</div>
 
 	</footer>
@@ -255,6 +251,7 @@
 	<script src="../../../../js/underscore.min.js"></script>
 	<script src="../../../../js/catalog.js"></script>
 	<script src="../../../../js/main.js"></script>
+	<script src="../../../../js/cart.js"></script>
 	<script src="../../../../js/carousel.js"></script>
 	<script src="../../../../js/scrollbar.js"></script>
 	<script src="../../../../js/push.js"></script>

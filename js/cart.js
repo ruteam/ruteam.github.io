@@ -1,6 +1,5 @@
 ;(function() {
 	const cartDOMElement = document.querySelector('.js-cart');
-	const quantityDOMElement = document.querySelector('.js-cart-item-quantity12');
 
 	const cart = JSON.parse(localStorage.getItem('cart')) || {};
 	const cartItemsCounterDOMElement = document.querySelector('.js-cart-total-count-items');
@@ -10,22 +9,7 @@
 		const cartWrapperDOMElement = document.querySelector('.js-cart');
 	}
 
-	const renderQuantityItem = ({ id, quantity }) => {
-		const quantityItemDOMElement = document.createElement('div');
-		const quantityItemTemplate =`
-			<input class="number-text12" type="text" name="count" value="${quantity}">
-			<a href="#" class="number-minus js-count-minus">−</a>
-			<a href="#" class="number-plus js-count-plus">+</a>`
-
-			quantityItemDOMElement.innerHTML = quantityItemTemplate;
-			quantityItemDOMElement.setAttribute('data-id', id);
-			quantityItemDOMElement.classList.add('js-cart-item');
-			if (document.querySelector('.js-cart-item-quantity12')) {
-				quantityDOMElement.appendChild(quantityItemDOMElement);
-			};
-	};
-
-	const renderCartItem = ({ id, name, price, link, img, quantity }) => {
+	const renderCartItem = ({ id, name, type, price, link, img, quantity }) => {
 		const cartItemDOMElement = document.createElement('div');
 		const cartItemTemplate =`
 		<div class="order-checkout__items">
@@ -35,20 +19,20 @@
 						<img src="${img}" alt="${name}">
 					</a>
 					<div class="item-order__body">
-						<a href="${link}" class="item-order__title"><span>${name}</span></a>
-						<div class="item-order__price"><span class="rub-price js-cart-item-price">${price}</span> ₽</div>
+						<a href="${link}" class="item-order__title">${type}<span> ${name}</span></a>
+						<div class="item-order__price"><span class="rub-price js-cart-item-price">${numberWithSpaces(price)}</span> ₽</div>
 					</div>
 				</div>
 				<div class="item-order__quantity">
-					<div class="number js-cart-item-quantity" data-step="1" data-min="1" data-max="99">
-						<input class="number-text" type="text" name="count" value="${quantity}">
-						<a href="#" class="number-minus js-count-minus">−</a>
-						<a href="#" class="number-plus js-count-plus">+</a>
+					<div class="number-cart js-cart-item-quantity" data-step="1" data-min="1" data-max="99">
+						<input class="number-text-cart" type="text" name="count" value="${quantity}">
+						<a href="#" class="number-minus-cart js-count-minus">−</a>
+						<a href="#" class="number-plus-cart js-count-plus">+</a>
 					</div>
 				</div>
 				<div class="item-order__total">
 					<div class="item-order__label">Всего:</div>
-					<div class="item-order__price"><span class="rub-total">${price * quantity}</span> ₽</div>
+					<div class="item-order__price"><span class="rub-total">${numberWithSpaces(price * quantity)}</span> ₽</div>
 				</div>
 				<div class="cl-btn-2">
 					<div class="js-remove-cart">
@@ -85,8 +69,22 @@
 		return totalPrice;
 	};
 
+	const updateCartTotalItemsCounter = () => {
+		const totalQuantity = Object.keys(cart).reduce((acc, id) => {
+		  const { quantity } = cart[id];
+		  return acc + quantity;
+		}, 0);
+
+		if (cartItemsCounterDOMElement) {
+		  cartItemsCounterDOMElement.textContent = totalQuantity;
+
+		}
+
+		return totalQuantity;
+	  };
+
 	const updateCart = () => {
-		const totalPrice = updateCartTotalPrice();
+		const totalQuantity = updateCartTotalItemsCounter();
 		updateCartTotalPrice();
 		saveCart();
 	};
@@ -111,12 +109,11 @@
 		cart[id] = data;
 
 		renderCartItem(data);
-		renderQuantityItem(data);
 		updateCart();
 	};
 	const updateQuantity = (id, quantity) => {
 		const cartItemDOMElement = cartDOMElement.querySelector(`[data-id="${id}"]`);
-		const cartItemQuantityDOMElement = cartItemDOMElement.querySelector('.number-text');
+		const cartItemQuantityDOMElement = cartItemDOMElement.querySelector('.number-text-cart');
 		const cartItemPriceDOMElement = cartItemDOMElement.querySelector('.rub-total');
 		cart[id].quantity = quantity;
 		if (cartItemQuantityDOMElement) {
@@ -125,15 +122,6 @@
 		if (cartItemPriceDOMElement) {
 			cartItemPriceDOMElement.textContent = numberWithSpaces(quantity * cart[id].price);
 		};
-
-
-		const quantityItemQuantityDOMElement = document.querySelector('.number-text12');
-		cart[id].quantity = quantity;
-		if (quantityItemQuantityDOMElement) {
-			quantityItemQuantityDOMElement.value = quantity;
-
-		};
-
 
 		updateCart();
 	};
@@ -153,23 +141,19 @@
 	const getProductData = (productDOMElement) => {
 		const id = productDOMElement.getAttribute('data-id');
 		const name = productDOMElement.getAttribute('data-name');
+		const type = productDOMElement.getAttribute('data-type');
 		const price = productDOMElement.getAttribute('data-price');
 		const link = productDOMElement.getAttribute('data-link');
 		const img = productDOMElement.getAttribute('data-img');
 
 		const quantity = 1;
 
-		return { id, name, price, link, img, quantity};
+		return { id, name, type, price, link, img, quantity};
 	};
 
 	const renderCart = () => {
 		const ids = Object.keys(cart);
 		ids.forEach((id) => renderCartItem(cart[id]));
-	};
-
-	const renderQuantity = () => {
-		const ids = Object.keys(cart);
-		ids.forEach((id) => renderQuantityItem(cart[id]));
 	};
 
 	function numberWithSpaces(x) {
@@ -178,7 +162,6 @@
 
 	const cartInit = () => {
 		renderCart();
-		renderQuantity();
 		updateCart();
 		document.querySelector('body').addEventListener('click', (e) => {
 			const target = e.target;
@@ -207,32 +190,44 @@
 				const productID = cartItemDOMElement.getAttribute('data-id');
 				minusQuantity(productID);
 			}
-			if (target.classList.contains('js-count-product-plus')) {
-				e.preventDefault();
-				const productID = document.querySelector('.js-btn-add-to-cart').getAttribute('data-id');
-				plusQuantity(productID);
-			}
-			if (target.classList.contains('js-count-product-minus')) {
-				e.preventDefault();
-				const productID = document.querySelector('.js-btn-add-to-cart').getAttribute('data-id');
-				minusQuantity(productID);
-			}
 		});
 	};
 
 	cartInit();
 })();
 
+if (document.querySelector('.tovar__item-text')) {
+	$(document).ready(function() {
+		$('body').on('click', '.number-minus, .number-plus', function(){
+			var $row = $(this).closest('.number');
+			var $input = $row.find('.number-text');
+			var step = $row.data('step');
+			var val = parseFloat($input.val());
+			if ($(this).hasClass('number-minus')) {
+				val -= step;
+			} else {
+				val += step;
+			}
+			$input.val(val);
+			$input.change();
+			return false;
+		});
 
-
-if (document.querySelector('.rub-price') || document.querySelector('.rub-total')) {
-	function numberWithSpaces(x) {
-		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-	}
-	let prices = document.querySelector('.rub-price');
-	let total_prices = document.querySelector('.rub-total'); // МБ можно убрать, т. к. уже выполняется
-	let price = numberWithSpaces(prices.innerHTML);
-	let total_price = numberWithSpaces(total_prices.innerHTML);
-	document.querySelector('.rub-price').innerHTML = price;
-	document.querySelector('.rub-total').innerHTML = total_price;
+		$('body').on('change', '.number-text', function(){
+			var $input = $(this);
+			var $row = $input.closest('.number');
+			var step = $row.data('step');
+			var min = parseInt($row.data('min'));
+			var max = parseInt($row.data('max'));
+			var val = parseFloat($input.val());
+			if (isNaN(val)) {
+				val = step;
+			} else if (min && val < min) {
+				val = min;
+			} else if (max && val > max) {
+				val = max;
+			}
+			$input.val(val);
+		});
+	});
 }
