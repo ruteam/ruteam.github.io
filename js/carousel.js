@@ -9,7 +9,7 @@ if (document.querySelector('.swipers')) {
 		  prevEl: '.swiper-button-prev',
 		},
 		autoplay: {
-			delay: 5500,
+			delay: 3500,
 			disableOnInteraction: false,
 			pauseOnMouseEnter: true,
 		},
@@ -18,7 +18,7 @@ if (document.querySelector('.swipers')) {
 
 if (document.querySelector('.sliders')) {
 	const sliderVar = new Swiper('.subslides', {
-		slidesPerView:4,
+		slidesPerView: 4,
 	});
 	const slider = new Swiper('.sliders', {
 		thumbs: {
