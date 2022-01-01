@@ -224,7 +224,7 @@ a {
 }
 
 .intro__items {
-  background-image: url(../images/adv-4.png);
+  background-image: url(/images/adv-4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -50px;
