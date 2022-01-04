@@ -946,8 +946,8 @@ form {
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: 20px 10px;
-  width: 245px;
-  height: 230px;
+  width: 80px;
+  height: 60px;
 }
 
 /*.item__bgimgcarbines,
@@ -1190,8 +1190,8 @@ form {
   background-repeat: no-repeat;
   background-size: 50px;
   background-position: 20px 10px;
-  width: 241px;
-  height: 225px;
+  width: 80px;
+  height: 50px;
 }
 
 /* .item__bgimgscales-main,
@@ -1254,21 +1254,11 @@ form {
   left: 1352px;
 }
 */
-._hover--preload {
-  position: relative;
-  padding-top: 20px;
-  background-repeat: no-repeat;
-  background-size: 50px;
-  background-position: 20px 10px;
-  width: 241px;
-  height: 225px;
-  display: none;
-}
+
 .item__bgimgspin-main {
   background-image: url(../images/katalog/mainimg/spin/spin-1.png);
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgspin-main {
   background-image: url(../images/katalog/mainimg/spin/spin-2.png);
 }
@@ -1278,7 +1268,6 @@ form {
   background-size: 40px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgfishrod-main {
   background-image: url(../images/katalog/mainimg/fishrod/fishrod-2.png);
 }
@@ -1287,7 +1276,6 @@ form {
   background-image: url(../images/katalog/mainimg/coils/coils-1.png);
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgcoils-main {
   background-image: url(../images/katalog/mainimg/coils/coils-2.png);
 }
@@ -1297,7 +1285,6 @@ form {
   background-size: 40px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgbombards-main {
   background-image: url(../images/katalog/mainimg/bombards/bombards-2.png);
 }
@@ -1307,7 +1294,6 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgcarbines-main {
   background-image: url(../images/katalog/mainimg/carbines/carbines-2.png);
 }
@@ -1317,7 +1303,6 @@ form {
   background-size: 45px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgscales-main {
   background-image: url(../images/katalog/mainimg/scales/scales-2.png);
 }
@@ -1327,7 +1312,6 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgtools-main {
   background-image: url(../images/katalog/mainimg/tools/tools-2.png);
 }
@@ -1337,7 +1321,6 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgfeeders-main {
   background-image: url(../images/katalog/mainimg/feeders/feeders-2.png);
 }
@@ -1347,7 +1330,6 @@ form {
   background-size: 40px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimghooks-main {
   background-image: url(../images/katalog/mainimg/hooks/hooks-2.png);
 }
@@ -1356,7 +1338,6 @@ form {
   background-image: url(../images/katalog/mainimg/clothes/clothes-1.png);
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgclothes-main {
   background-image: url(../images/katalog/mainimg/clothes/clothes-2.png);
 }
@@ -1365,7 +1346,6 @@ form {
   background-image: url(../images/katalog/mainimg/leashes/leashes-1.png);
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgleashes-main {
   background-image: url(../images/katalog/mainimg/leashes/leashes-2.png);
 }
@@ -1375,7 +1355,6 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgsubchecks-main {
   background-image: url(../images/katalog/mainimg/subchecks/subchecks-2.png);
 }
@@ -1385,29 +1364,26 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgfloats-main {
   background-image: url(../images/katalog/mainimg/floats/floats-2.png);
 }
 
 .item__bgimgbait-main {
-  background-image: url(../images/katalog/mainimg/bait/bait-1.png);
-  background-size: 42px;
+  background-image: url(../images/katalog/mainimg/bait/bait_h.png);
+  background-size: 110px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgbait-main {
-  background-image: url(../images/katalog/mainimg/bait/bait-2.png);
+  background-position: -46px 10px;
 }
 
 .item__bgimgbaits-main {
-  background-image: url(../images/katalog/mainimg/baits/baits-1.png);
-  background-size: 42px;
+  background-image: url(../images/katalog/mainimg/baits/baits_h.png);
+  background-size: 110px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgbaits-main {
-  background-image: url(../images/katalog/mainimg/baits/baits-2.png);
+  background-position: -45px 10px;
 }
 
 .item__bgimgcages-main {
@@ -1415,7 +1391,6 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgcages-main {
   background-image: url(../images/katalog/mainimg/cages/cages-2.png);
 }
@@ -1425,7 +1400,6 @@ form {
   background-size: 38px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgchairs-main {
   background-image: url(../images/katalog/mainimg/chairs/chairs-2.png);
 }
@@ -1435,7 +1409,6 @@ form {
   background-size: 42px;
 }
 
-._hover--preload,
 .products__item-main:hover .item__bgimgcovers-main {
   background-image: url(../images/katalog/mainimg/covers/covers-2.png);
 }
@@ -1479,7 +1452,7 @@ form {
   flex-direction: column;
   margin-left: 20px;
   position: relative;
-  top: -30px;
+  top: 145px;
 }
 
 .item__name {
